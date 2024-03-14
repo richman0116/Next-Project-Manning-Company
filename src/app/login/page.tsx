@@ -1,37 +1,28 @@
 "use client";
-import Link from "next/link";
-import React, { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import React, { useState, useEffect } from "react";
+
 import axios from "axios";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
-export default function LoginPage() {
+export default function Page () {
     const router = useRouter();
-    const [user, setUser] = React.useState({
-        email: "",
-        password: "",
-    });
-    const [buttonDisabled, setButtonDisabled] = React.useState(false);
-    const [loading, setLoading] = React.useState(false);
-    const [errorMessage, setErrorMessage] = React.useState(""); // State to hold error message
+    const [user, setUser] = useState({ email: "", password: "" });
+    const [buttonDisabled, setButtonDisabled] = useState(true);
+    const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
 
-    const onLogin = async () => {
+    const handleLogin = async () => {
+        setLoading(true);
         try {
-            setLoading(true);
             const response = await axios.post("/api/login", user);
-            console.log("Login success", response.data);
-            toast.success("Login success");
+            toast.success("Login successful");
             router.push("/profile");
         } catch (error:any) {
-            console.log("Login failed", error.message);
             if (error.response && error.response.status === 400) {
-                if (error.response.data.error === "User does not exist") {
-                    setErrorMessage("User does not exist");
-                } else if (error.response.data.error === "Invalid password") {
-                    setErrorMessage("Invalid password"); // Set error message for invalid password
-                }
+                setErrorMessage("Invalid email or password");
             } else {
-                toast.error(error.message);
+                toast.error("An error occurred. Please try again later.");
             }
         } finally {
             setLoading(false);
@@ -39,21 +30,15 @@ export default function LoginPage() {
     };
 
     useEffect(() => {
-        if (user.email.length > 0 && user.password.length > 0) {
-            setButtonDisabled(false);
-        } else {
-            setButtonDisabled(true);
-        }
-    }, [user]);
+        setButtonDisabled(!(user.email && user.password));
+    }, [user.email, user.password]);
 
     return (
         <div className="flex flex-col items-center mt-8">
             <h1 className="text-2xl font-bold">{loading ? 'Processing' : 'Login'}</h1>
             <hr className="w-full my-4" />
             <div className="w-64">
-                <label htmlFor="email" className="block mb-1 font-medium text-gray-700">
-                    Email
-                </label>
+                <label htmlFor="email" className="block mb-1 font-medium text-gray-700">Email</label>
                 <input
                     id="email"
                     type="email"
@@ -62,9 +47,7 @@ export default function LoginPage() {
                     onChange={(e) => setUser({ ...user, email: e.target.value })}
                     className="w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:border-blue-500"
                 />
-                <label htmlFor="password" className="block mb-1 font-medium text-gray-700">
-                    Password
-                </label>
+                <label htmlFor="password" className="block mb-1 font-medium text-gray-700">Password</label>
                 <input
                     id="password"
                     type="password"
@@ -75,7 +58,7 @@ export default function LoginPage() {
                 />
                 {errorMessage && <p className="text-red-500 mb-2">{errorMessage}</p>}
                 <button
-                    onClick={onLogin}
+                    onClick={handleLogin}
                     disabled={buttonDisabled}
                     className={`w-full px-4 py-2 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none ${buttonDisabled ? 'cursor-not-allowed opacity-50' : ''}`}
                 >
@@ -83,7 +66,8 @@ export default function LoginPage() {
                 </button>
             </div>
             <hr className="w-full my-4" />
-            <Link href="/signup" className="text-blue-500 hover:underline">Not registered? Sign up here</Link>
+            <a href="/forgotpassword" className="text-blue-500 hover:underline">Forgot Password?</a>
+            <p className="mt-2">Not registered? <a href="/signup" className="text-blue-500 hover:underline">Sign up here</a></p>
         </div>
     );
 }

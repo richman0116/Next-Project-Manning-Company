@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
 
-export default function SignupPage() {
+export default function Page () {
     const router = useRouter();
     const [user, setUser] = useState({
         email: '',
@@ -15,11 +15,12 @@ export default function SignupPage() {
     const [buttonDisabled, setButtonDisabled] = useState(false);
     const [loading, setLoading] = useState(false);
     const [isEmailRegistered, setIsEmailRegistered] = useState(false);
-
+    const [isEmailSent, setIsEmailSent] = useState(false);
     const onSignup = async () => {
         try {
             setLoading(true);
             const response = await axios.post('/api/signup', user);
+            setIsEmailSent(true);
             console.log('Signup success', response.data);
             toast.success('Signup successful! Please login to your account.'); 
             router.push('/login');

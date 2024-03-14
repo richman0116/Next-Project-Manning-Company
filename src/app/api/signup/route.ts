@@ -1,59 +1,48 @@
-
-
-
-
 import User from "@/app/modols/usermodule";
-import { NextRequest ,NextResponse} from "next/server";
-import bcryptjs, { hash } from 'bcryptjs'
+import { NextRequest, NextResponse } from "next/server";
+import bcryptjs from "bcryptjs";
 import { connect } from "@/app/dbcomfig/dbconfige";
+import { sendEmail } from "@/helpers/mailer";
 
 connect();
 
-
-export async function POST(request: NextRequest){
+export async function POST(request: NextRequest) {
     try {
-        const reqBody = await request.json()
-        const {username, email, password} = reqBody
+        const reqBody = await request.json();
+        const { username, email, password } = reqBody;
 
-        console.log(reqBody);
-
-        //check if user already exists
-        const user = await User.findOne({email})
-
-        if(user){
-            return NextResponse.json({error: "User already exists"}, {status: 400})
+        // Check if user already exists
+        const existingUser = await User.findOne({ email });
+        if (existingUser) {
+            return NextResponse.json({ error: "User already exists" }, { status: 400 });
         }
 
-        //hash password
-        const salt = await bcryptjs.genSalt(10)
-        const hashedPassword = await bcryptjs.hash(password, salt)
+        // Hash password
+        const salt = await bcryptjs.genSalt(10);
+        const hashedPassword = await bcryptjs.hash(password, salt);
 
+        // Create a new user
         const newUser = new User({
             username,
             email,
             password: hashedPassword
-        })
+        });
 
-        const savedUser = await newUser.save()
-        console.log(savedUser);
+        // Save the new user
+        const savedUser = await newUser.save();
 
-        //send verification email
-
-       
+        // Send verification email
+        const verificationToken = await bcryptjs.hash(savedUser._id.toString(), 10);
+        const templateName = "verification_template.html";
+        const subject = "Email Verification";
+        await sendEmail(email, subject, { verificationLink: `${process.env.DOMAIN}/verifyemail?token=${verificationToken}` }, templateName);
 
         return NextResponse.json({
-            message: "User created successfully",
+            message: "User created successfully. Verification email sent.",
             success: true,
             savedUser
-        })
-        
-        
-
-
+        });
     } catch (error: any) {
-        return NextResponse.json({error: error.message}, {status: 500})
-
+        return NextResponse.json({ error: error.message }, { status: 500 });
     }
 }
-
-
