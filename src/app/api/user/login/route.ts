@@ -12,14 +12,14 @@ export async function POST(request: NextRequest){
 
         const reqBody = await request.json()
         const {email, password} = reqBody;
-        console.log(reqBody);
+        
 
    
         const user = await User.findOne({email})
         if(!user){
             return NextResponse.json({error: "User does not exist"}, {status: 400})
         }
-        console.log("user exists");
+        
         
         
       
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest){
         if(!validPassword){
             return NextResponse.json({error: "Invalid password"}, {status: 400})
         }
-        console.log('user', user);
+       
         
   
         const tokenData = {

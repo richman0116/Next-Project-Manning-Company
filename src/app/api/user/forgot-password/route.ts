@@ -9,14 +9,12 @@ export async function POST(request: NextRequest){
     try {
         const reqBody = await request.json()
         const {email} = reqBody;
-        console.log(reqBody);
-
    
         const user = await User.findOne({email})
         if(!user){
             return NextResponse.json({error: "User does not exist"}, {status: 400})
         }
-        console.log("user exists");
+
 
         const token = await jwt.sign({ userId: user._id }, process.env.TOKEN_SECRET!, {expiresIn: "1d"})
         const templateName = "password_reset_email_template.html";

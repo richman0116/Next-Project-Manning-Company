@@ -19,7 +19,7 @@ export default function Page () {
     const onSignup = async () => {
         try {
             setLoading(true);
-            const response = await axios.post('/api/signup', user);
+            const response = await axios.post('/api/user/signup', user);
             setIsEmailSent(true);
             console.log('Signup success', response.data);
             toast.success('Signup successful! Please login to your account.'); 

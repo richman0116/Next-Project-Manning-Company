@@ -15,7 +15,7 @@ export default function Page() {
   const searchparms = useSearchParams()
   const resetPassword = async () => {
     try {
-      await axios.post('/api/reset-password', { token, password });
+      await axios.post('/api/user/reset-password', { token, password });
       setResetSuccess(true);
     } catch (error: any) {
       setError(true);
