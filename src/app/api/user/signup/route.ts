@@ -2,7 +2,8 @@ import User from "@/app/modols/usermodule";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
 import { connect } from "@/app/dbcomfig/dbconfige";
-import { sendEmail } from "@/helpers/mailer";
+import { sendEmail } from "@/app/helpers/mailer";
+
 
 connect();
 
