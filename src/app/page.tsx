@@ -1,8 +1,27 @@
+import About_Us from "@/components/About_Us";
+import Collection from "@/components/Collection";
+import Footer from "@/components/Footer";
+import Hero from "@/components/Hero";
+import OurBrands from "@/components/OurBrands";
+import OurProcess from "@/components/OurProcess";
+import ShopNowCol from "@/components/ShopNowCol";
+import Testimonials from "@/components/Testimonials";
+import { getCollections } from "@/lib/shopify";
 
-export default function Home() {
+
+export default async function  Home () {
+      const collections = await getCollections();
+    const slicedCollections = collections.slice(1);
   return (
-    <div className="   mt-52">
-      <h1 className=" text-3xl  text-center"> Welcome to Manning Company Store</h1>
+    <div className="bg-[#F5F2ED] h-full">
+      <Hero/>
+      <About_Us/>
+    <OurProcess/>
+    {slicedCollections && <Collection collections={slicedCollections} />}
+    <ShopNowCol/>
+    <OurBrands/>
+    <Testimonials/>
+    <Footer/>
     </div>
   );
 }

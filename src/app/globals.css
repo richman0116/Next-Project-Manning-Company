@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* fonts.css */
+
+@font-face {
+  font-family: 'Akzidenz-Grotesk Pro';
+  src: url('/path/to/Akzidenz-Grotesk-Pro.woff2') format('woff2'),
+       url('/path/to/Akzidenz-Grotesk-Pro.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.custom-font1 {
+  font-family: 'Akzidenz-Grotesk Pro', sans-serif;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.max-container {
+    @apply mx-auto max-w-[1600px];
+  }
+
+ 
+
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+
+  .footer {
+    @apply font-normal my-2 block text-white text-sm leading-[15px] font-Akzidenz;
+  }
+  
+  .proces {
+    @apply font-SaolDisplay  pt-52 text-center leading-10 font-light italic absolute inset-0 text-[#FFFFFF] text-4xl  
+  }
