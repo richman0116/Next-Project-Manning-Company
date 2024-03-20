@@ -18,6 +18,12 @@ const config: Config = {
         Akzidenz : ["Akzidenz-Grotesk Pro"]
       }
     },
+    screens: {
+      sm: '480px',
+      md: '700px',
+      lg: '1077px',
+      xl: '1280px',
+    },
   },
   plugins: [],
 };

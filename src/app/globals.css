@@ -40,3 +40,11 @@
   .proces {
     @apply font-SaolDisplay  pt-52 text-center leading-10 font-light italic absolute inset-0 text-[#FFFFFF] text-4xl  
   }
+
+ .form {
+  @apply p-2 bg-[#0F0F0F] rounded-md mb-4
+ }
+
+ .fheading {
+  @apply text-xs uppercase text-[#FFFFFF] font-medium
+ }

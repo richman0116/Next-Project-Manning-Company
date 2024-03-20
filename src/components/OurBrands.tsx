@@ -14,20 +14,20 @@ import BotomLinks from "@/shared/BotomLinks";
 
 const OurBrands = () => {
   return (
-    <section className="overflow-hidden max-container  ">
-    <div className=" overflow-hidden flexCenter  bg-[#F5F2ED] h-full mt-20  gap-[8px] flex-col">
+    <section className="overflow-hidden max-container   hidden md:block lg:block ">
+    <div className=" overflow-hidden flexCenter   h-full mt-10  gap-[8px] flex-col">
       <div className="w-[500px] h-[101px] space-y-2 flex-col text-[#000000] up">
         <h1 className="font-Akzidenz text-xs flexCenter inline-block leading-3 uppercase font-normal">
           OUR Brands
         </h1>
-        <p className="text-center uppercase">
-          <span className="font-SaolDisplay italic font-normal text-[40px] leading-10">
+        <p className="text-center uppercase font-SaolDisplay text-[28px]   font-normal lg:text-[40px] md:text-[40px] md:leading-10">
+          <span className=" italic">
             Discover Our
           </span>
-          <span className="font-normal font-SaolDisplay text-[40px] leading-10 ">
+          <span className=" ">
             Signature
           </span>
-          <span className="font-SaolDisplay italic font-normal text-[40px] leading-10 text-center">
+          <span className=" italic">
             Labels
           </span>
         </p>

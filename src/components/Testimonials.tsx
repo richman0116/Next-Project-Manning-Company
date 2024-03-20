@@ -15,12 +15,12 @@ import Quation from '../../public/assets/Quation.svg';
 export default function Testimonials() {
   return (
     <>
-      <div className='space-y-2 flexCenter max-container w-[460px] pt-20 flex flex-col text-[#000000] up'>
+      <div className=' space-y-2 flexCenter max-container w-full lg:w-[460px] md:w-[460px] mt-10 flex flex-col text-[#000000] up'>
         <h1 className='font-Akzidenz text-xs leading-3 uppercase font-normal'>Testimonials</h1>
-        <p className="text-center uppercase">
-          <span className='font-SaolDisplay italic font-normal text-[40px] leading-10'>Rave Reviews </span>
-          <span className='font-normal font-SaolDisplay text-[40px] leading-10'>from Our Satisfied</span>
-          <span className='font-SaolDisplay italic font-normal text-[40px] leading-10 text-center'>Clients</span>
+        <p className="text-center font-SaolDisplay   text-[25px] font-normal lg:text-[40px]   md:text-[40px] leading-10 uppercase">
+          <span className=' italic '>Rave Reviews </span>
+          <span className='font-normal  '>from Our Satisfied</span>
+          <span className=' italic '>Clients</span>
         </p>
       </div>
 
@@ -44,10 +44,10 @@ export default function Testimonials() {
             },
           }}
         >
-          <div className="flex  w-[336px] ">
+          <div className="flex  w-[336px]  ">
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index} className="container bg-[#ece7df] mx-2 p-4 ">
-                <div className="flex  flex-col  ">
+              <SwiperSlide key={index} className="container bg-[#F5F2ED] hover:bg-[#F5F2ED]  hover:mt-2 mx-2 p-4 ">
+                <div className="flex  flex-col   ">
                   <Image src={Quation} alt="Quation" className="pb-4 pt-4" width={67} height={46} />
                   <blockquote className="tracking-[0.05em] leading-7 font-Akzidenz font-light text-2xl pb-4 pt-4">{item.text}</blockquote>
                   <p className="text-sm font-light pb-4 pt-4 ">{item.name}</p>
