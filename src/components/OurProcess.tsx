@@ -18,36 +18,41 @@ const OurProcess = () => {
       
 
      
-        <div className='w-full md:flex-row  md:gap-[13px] justify-center  p-1 gap-1 flex lg:flex-row'>
+        <div className='w-full md:flex-row p-5  md:gap-[13px] justify-center   gap-1 flex lg:flex-row'>
 
         {/* First flex container */}
         <div className=' md:flex-row flex-row md:gap-[13px]  gap-1 flex'>
           
           {/* First nested flex container */}
           <div className='md:flex-row flex-col md:gap-[13px]  gap-1 flex'>
-            <div>
+            <div className='relative'>
             <Image alt={Frame[0].alt} className="md:w-[252px] object-cover md:h-[339px]" src={Frame[0].src} />
+           <p className="flexCenter proces">{Frame[0].name}</p>
             </div>
-            <div>
-            <Image alt={Frame[1].alt} className="md:w-[252px] object-cover md:h-[339px] " src={Frame[1].src} />
+            <div className='  relative'>
+            <Image alt={Frame[1].alt} className="md:w-[252px] object-cover  md:h-[339px] " src={Frame[1].src} />
+            <p className="flexCenter proces">{Frame[1].name}</p>
             </div>
           </div>
       
           {/* Second nested flex container */}
           <div className='md:flex-row flex-col gap-1 md:gap-[13px]  flex'>
-            <div>
+            <div className='  relative'>
             <Image alt={Frame[2].alt} className="md:w-[252px] object-cover md:h-[339px] " src={Frame[2].src} />
+            <p className="flexCenter proces">{Frame[2].name}</p>
             </div>
-            <div>
+            <div className='  relative'>
             <Image alt={Frame[3].alt} className="md:w-[252px] object-cover md:h-[339px] " src={Frame[3].src} />
+            <p className="flexCenter proces">{Frame[3].name}</p>
             </div>
           </div>
       
         </div>
       
         {/* Second flex item */}
-        <div className=''>
-        <Image alt={Frame[4].alt} className="md:w-[252px]  object-cover md:h-[339px]  w-full h-[354px]" src={Frame[4].src} />
+        <div className='  relative'>
+        <Image alt={Frame[4].alt} className="md:w-[252px]  object-cover md:h-[339px]  w-full sm:h-[100%] h-[100%]" src={Frame[4].src} />
+        <p className=" flexCenter proces">{Frame[4].name}</p>
         </div>
       
       </div>

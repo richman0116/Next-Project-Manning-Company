@@ -7,6 +7,7 @@ import bagIcon from '../../public/assets/bag-2.svg';
 import profileIcon from '../../public/assets/profile.svg';
 import searchIcon from '../../public/assets/search-normal.svg';
 import whatsappIcon from '../../public/assets/whatsapp.svg';
+
 import hamburgerIcon from '../../public/assets/Hamburger menu.svg';
 import closeIcon from '../../public/assets/Close_Icons_UIA.svg';
 
@@ -37,7 +38,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex justify-center'>
                     <ul className="hidden h-full gap-[15px] lg:flex">
-                        {NAV_LINKS.map((link) => (
+                    {NAV_LINKS.slice(0, 4).map((link) => (
                             <Link href={link.href} key={link.key} className="">
                                 <h1 className='font-Akzidenz text-lg font-normal text-[#FFFFFF]'>{link.label}</h1>
                             </Link>
@@ -85,12 +86,17 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className='bg-[#ECECEC] p-5'>
-                        <ul className="h-full gap-[15px] lg:flex">
+                        <ul className="h-full gap-[15px] lg:flex ">
                             {NAV_LINKS.map((link) => (
                                 <Link href={link.href} key={link.key} className="">
                                     <h1 className='font-Akzidenz text-lg font-normal text-[#000000]'>{link.label}</h1>
                                 </Link>
+                                
                             ))}
+                            <div className='flex  gap-1 '>
+                                <Image className='w-6 h-6 pt-1' src={whatsappIcon} alt="WhatsApp Icon" />
+                                <p className='font-Akzidenz text-lg font-normal text-[#000000]'>+852 5169 7732</p>
+                            </div>
                         </ul> 
                     </div>
                 </div>

@@ -88,7 +88,7 @@ const Footer = () => {
                         </div>
                     </div>
                     {/* Contact information */}
-                    <div className='flex lg:flex-row p-2 w-full flex-col md:flex-row text-white pt-6 gap-4'>
+                    <div className='flex lg:flex-row p-4 w-full flex-col md:flex-row text-white pt-6 gap-4'>
                         <div className='flex flex-col footer gap-3'>
                             <div className='flex pb-4 items-center'>
                                 <Image src={callIcon} alt="Call Icon" />

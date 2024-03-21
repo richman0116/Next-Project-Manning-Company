@@ -13,13 +13,13 @@ const Collection = ({ collections }:any) => {
         <p className="text-center uppercase font-SaolDisplay italic font-normal text-[40px] leading-10">Online shop</p>
       </div>
 
-      <div className='p-1  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-2 '>
+      <div className='  grid md:grid-cols-4 lg:grid-cols-4  p-5 grid-cols-2  gap-2 '>
         {collections.map((collection:any) => (
           <Link key={collection.handle} href={collection.path}>
             <div className='relative  mb-8 rounded overflow-hidden'>
               <div className=''>
                 {collection.image?.url && (
-                  <img
+                  <Image
                     width={319}
                     height={339}
                     src={collection.image.url}

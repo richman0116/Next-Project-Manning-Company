@@ -1,12 +1,12 @@
-import frame1 from '../../public/assets/Frame1.png'
-import frame2 from '../../public/assets/Frame2.png'
-import frame3 from '../../public/assets/Frame3.png'
-import frame4 from '../../public/assets/Frame4.png'
-import frame5 from '../../public/assets/Frame5.png'
+import frame1 from '../../public/assets/procese1.jpeg'
+import frame2 from '../../public/assets/procese2.jpeg'
+import frame3 from '../../public/assets/procese3.jpeg'
+import frame4 from '../../public/assets/procese4.jpeg'
+import frame5 from '../../public/assets/procese5.jpeg'
 
-import shopnowimage1 from '../../public/assets/shopnowimage1.png'
-import shopnowimage2 from '../../public/assets/shopnowimage2.png'
-import shopnowimage3 from '../../public/assets/shopnowimage3.png'
+import shopnowimage1 from '../../public/assets/shopnow1.jpeg'
+import shopnowimage2 from '../../public/assets/shopnow2.jpeg'
+import shopnowimage3 from '../../public/assets/shopnow3.jpeg'
 
 import brand1 from '../../public/assets/brand1.png'
 import brand2 from '../../public/assets/brand2.png'
@@ -31,38 +31,42 @@ export const NAV_LINKS = [
   { href: '/', key: 'Shop now', label: 'Shop now' },
   { href: '/', key: 'Trunk Show ', label: 'Trunk Show ' },
   { href: '/', key: 'contact_us', label: 'Contact Us' },
+  { href: '/', key: 'Sign In', label: 'Sign In' },
+  
 ];
 
 // CAMP SECTION
 export const Frame = [
   
-  {
-    name: 'Fabrics',
-    alt: 'Frame2',
-    src: frame2,
-  },
+  
   {
     name: 'Measurement',
     alt: 'Frame1',
     src: frame1,
   },
+  {
+    name: 'Fabrics',
+    alt: 'Frame2',
+    src: frame2,
+  },
+  
   
   {
     name : 'Workmanship',
     alt: 'Frame3',
     src: frame3,
   },
-  {
-    name:'Perfect Fit Garantee',
-    alt: 'Frame5',
-    src: frame5,
-  },
+  
   {
     name:'Finish a Delivery',
     alt: 'Frame4',
     src: frame4,
   },
- 
+  {
+    name:'Perfect Fit Garantee',
+    alt: 'Frame5',
+    src: frame5,
+  },
 
 ];
 
@@ -145,33 +149,33 @@ export const  testimonials = [
   
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'a Collier',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'v Collier',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'a Collier',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'c Collier',
     
   },
 
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'd Collier',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'Freda Collier',
+    name: 'e Collier',
     
   },
   

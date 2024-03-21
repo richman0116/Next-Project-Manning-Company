@@ -10,11 +10,11 @@ const ShopNowCol = () => {
                 <p className="text-center uppercase font-SaolDisplay italic font-normal text-[40px] leading-10">shop now</p>
             </div>
  
-            <div className="flex  md:flex-row flex-col flexCenter gap-3 m-5">
+            <div className="flex  md:flex-row flex-col flexCenter gap-3 p-5">
                 {shop_now_image.map((item, index) => (
                     <div key={index} className="relative mb-8 rounded overflow-hidden">
                         <Image alt={item.alt} className="w-[425px] h-[339px]  object-cover" src={item.src} />
-                        {/* <p className="flexCenter proces">{item.name}</p> */}
+                        <p className="flexCenter shopnow">{item.name}</p>
                     </div>
                 ))}
             </div>
