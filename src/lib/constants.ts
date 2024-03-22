@@ -1,12 +1,12 @@
-import frame1 from '../../public/assets/procese1.jpeg'
-import frame2 from '../../public/assets/procese2.jpeg'
-import frame3 from '../../public/assets/procese3.jpeg'
-import frame4 from '../../public/assets/procese4.jpeg'
-import frame5 from '../../public/assets/procese5.jpeg'
+import frame1 from '../../public/assets/procese1.png'
+import frame2 from '../../public/assets/procese2.png'
+import frame3 from '../../public/assets/procese3.png'
+import frame4 from '../../public/assets/procese4.png'
+import frame5 from '../../public/assets/procese5.png'
 
-import shopnowimage1 from '../../public/assets/shopnow1.jpeg'
-import shopnowimage2 from '../../public/assets/shopnow2.jpeg'
-import shopnowimage3 from '../../public/assets/shopnow3.jpeg'
+import shopnowimage1 from '../../public/assets/shopnow1.png'
+import shopnowimage2 from '../../public/assets/shopnow2.png'
+import shopnowimage3 from '../../public/assets/shopnow3.png'
 
 import brand1 from '../../public/assets/brand1.png'
 import brand2 from '../../public/assets/brand2.png'
@@ -149,33 +149,33 @@ export const  testimonials = [
   
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'a Collier',
+    name: 'Freda Collier 1',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'v Collier',
+    name: 'Freda Collier 2',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'a Collier',
+    name: 'Freda Collier 3',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'c Collier',
+    name: 'Freda Collier 4',
     
   },
 
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'd Collier',
+    name: 'Freda Collier 5',
     
   },
   {
     text: 'Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.',
-    name: 'e Collier',
+    name: 'Freda Collier 6',
     
   },
   

@@ -15,8 +15,10 @@ const config: Config = {
         'hero': "url('/assets/Hero.jpeg')", // Adjust the path based on your project structure
       },
       fontFamily: {
-        SaolDisplay: ["Saol Display"],
-        Akzidenz: ["Akzidenz-Grotesk Pro"],
+        SaolDisplay: ["var(--font-SaolDisplay)"],
+        SaolDisplayR: ["var(--font-SaolDisplayR)"],
+        Akzidenz: ["var(--font-Akzidenz)"],
+        Akzidenzpc: ["var(--font-Akzidenzpc)"]
       },
       screens: {
         sm: '350px',

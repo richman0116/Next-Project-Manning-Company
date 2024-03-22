@@ -21,7 +21,7 @@ export default async function  Home () {
     <ShopNowCol/>
     <OurBrands/>
     <Testimonials/>
-    <Footer/>
+    
     </div>
   );
 }

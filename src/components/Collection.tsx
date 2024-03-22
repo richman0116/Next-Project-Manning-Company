@@ -8,12 +8,13 @@ import arrow from '../../public/assets/send.svg';
 const Collection = ({ collections }:any) => {
   return (
     <div className='max-container flexCenter h-full mt-10 gap-[8px] flex-col'>
-      <div className='w-[500px] h-[101px] space-y-2 flex-col text-[#000000] up'>
-        <h1 className='font-Akzidenz text-xs flexCenter inline-block leading-3 uppercase font-normal'>Shop now</h1>
-        <p className="text-center uppercase font-SaolDisplay italic font-normal text-[40px] leading-10">Online shop</p>
+      <div className='w-[500px]  flexCenter flex-col text-[#000000] up'>
+        <h1 className='font-Akzidenz text-[10px] '>Shop now</h1>
+        <p className=" font-SaolDisplay  uppercase  text-[40px]"
+>Online shop</p>
       </div>
 
-      <div className='  grid md:grid-cols-4 lg:grid-cols-4  p-5 grid-cols-2  gap-2 '>
+      <div className='  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-2 md:p-5 p-1'>
         {collections.map((collection:any) => (
           <Link key={collection.handle} href={collection.path}>
             <div className='relative  mb-8 rounded overflow-hidden'>

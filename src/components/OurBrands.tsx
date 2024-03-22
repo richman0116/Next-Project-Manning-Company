@@ -16,18 +16,19 @@ const OurBrands = () => {
   return (
     <section className="overflow-hidden max-container   hidden md:block lg:block ">
     <div className=" overflow-hidden flexCenter   h-full mt-10  gap-[8px] flex-col">
-      <div className="w-[500px] h-[101px] space-y-2 flex-col text-[#000000] up">
-        <h1 className="font-Akzidenz text-xs flexCenter inline-block leading-3 uppercase font-normal">
+      <div className="w-[400px] space-y-2 flex-col text-[#000000] up">
+        <h1 className="font-Akzidenz flexCenter text-[10px]  uppercase ">
           OUR Brands
         </h1>
-        <p className="text-center uppercase font-SaolDisplay text-[28px]   font-normal lg:text-[40px] md:text-[40px] md:leading-10">
-          <span className=" italic">
-            Discover Our
+        <p className="text-center uppercase   text-[40px]">
+
+          <span className=" font-SaolDisplay ">
+            Discover  {''}
           </span>
-          <span className=" ">
-            Signature
+          <span className=" font-SaolDisplayR ">
+          Our Signature {''}
           </span>
-          <span className=" italic">
+          <span className="font-SaolDisplay ">
             Labels
           </span>
         </p>
@@ -65,9 +66,7 @@ const OurBrands = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className=" pt-20 flexCenter">
-      <BotomLinks text={" Discover now"} />
-      </div>
+      
     
     </section>
   );
