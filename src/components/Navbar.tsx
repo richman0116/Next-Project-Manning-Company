@@ -17,7 +17,7 @@ const Navbar = () => {
     const toggleMenu = () => setShowMenu(!showMenu);
 
     return (
-        <section className="max-container w-[360px]   fixed top-0 z-50  bg-[#F5F2ED]   ">
+        <section className="max-container w-[360px]  md:w-full  fixed top-0 z-50  bg-[#F5F2ED]   ">
             <div className='w-full flex-col  max-container hidden    lg:block md:block'>
                 <div className=" r flex justify-between p-4 w-full">
                     <div className="flex gap-3">
