@@ -1,14 +1,11 @@
-import React, { Suspense } from 'react'
-
-import Verifyemail from '../authentication/Verifyemail'
-
-
+import React, { Suspense } from "react";
+import Verifyemail from "../authentication/Verifyemail";
 const page = () => {
   return (
     <Suspense>
-      <Verifyemail/>
+      <Verifyemail />
     </Suspense>
-  )
-}
+  );
+};
 
-export default page
+export default page;

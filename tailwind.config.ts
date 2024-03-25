@@ -18,7 +18,8 @@ const config: Config = {
         SaolDisplay: ["var(--font-SaolDisplay)"],
         SaolDisplayR: ["var(--font-SaolDisplayR)"],
         Akzidenz: ["var(--font-Akzidenz)"],
-        Akzidenzpc: ["var(--font-Akzidenzpc)"]
+        Akzidenzpc: ["var(--font-Akzidenzpc)"],
+        Akzidenzlc: ["var(--font-Akzidenzlc)"]
       },
       screens: {
         sm: '350px',

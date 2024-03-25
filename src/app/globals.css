@@ -23,7 +23,7 @@
 }
 
 .max-container {
-    @apply mx-auto max-w-[1600px];
+    @apply max-w-[1600px];
   }
 
  

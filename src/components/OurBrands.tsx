@@ -1,38 +1,28 @@
-'use client'
+"use client";
 import React from "react";
 import { A11y, Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
-
 import Image from "next/image";
 import arrow from "../../public/assets/send.svg";
 import { brands } from "@/lib/constants";
 import BotomLinks from "@/shared/BotomLinks";
-
 const OurBrands = () => {
   return (
-    <section className="overflow-hidden max-container   hidden md:block lg:block ">
-    <div className=" overflow-hidden flexCenter   h-full mt-10  gap-[8px] flex-col">
-      <div className="w-[400px] space-y-2 flex-col text-[#000000] up">
-        <h1 className="font-Akzidenz flexCenter text-[10px]  uppercase ">
-          OUR Brands
-        </h1>
-        <p className="text-center uppercase   text-[40px]">
-
-          <span className=" font-SaolDisplay ">
-            Discover  {''}
-          </span>
-          <span className=" font-SaolDisplayR ">
-          Our Signature {''}
-          </span>
-          <span className="font-SaolDisplay ">
-            Labels
-          </span>
-        </p>
-      </div>
+    <section className="overflow-hidden max-container  mt-10  hidden md:block lg:block ">
+      <div className=" overflow-hidden flexCenter   h-full  gap-[8px] flex-col">
+        <div className="md:w-[400px]   flex-col text-[#000000] up">
+          <h1 className="    flexCenter text-[10px]  uppercase  font-Akzidenz">
+            OUR brands
+          </h1>
+          <p className="text-center  uppercase font-normal text-[25px] lg:text-[40px] md:text-[40px] leading-10  ">
+            <span className="font-SaolDisplay  ">Discover </span>
+            <span className=" font-SaolDisplayR">our {""} Signature </span>
+            <span className=" font-SaolDisplay ">Labels</span>
+          </p>
+        </div>
       </div>
       <Swiper
         modules={[Pagination, Autoplay, A11y]}
@@ -66,12 +56,11 @@ const OurBrands = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      
-    
+      <div className=" relative pt-20 flexCenter">
+        <BotomLinks text={" Discover now"} />
+      </div>
     </section>
   );
 };
 
 export default OurBrands;
-
-

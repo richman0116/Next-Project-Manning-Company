@@ -5,7 +5,7 @@ import "./globals.css";
 
 
 import Navbar from "@/components/Navbar";
-import { Akzidenz, Akzidenzpc, SaolDisplay, SaolDisplayR } from "@/font_utils/customFonts";
+import { Akzidenz, Akzidenzlc, Akzidenzpc, SaolDisplay, SaolDisplayR } from "@/font_utils/customFonts";
 import Footer from "@/components/Footer";
 
 
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${Akzidenz.variable} ${SaolDisplay.variable} 
       ${Akzidenzpc.variable} 
-      ${SaolDisplayR.variable}`}>
+      ${SaolDisplayR.variable} ${Akzidenzlc.variable}`}>
       <Navbar />
         {children}
         <Footer/>

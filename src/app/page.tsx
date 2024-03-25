@@ -8,20 +8,18 @@ import ShopNowCol from "@/components/ShopNowCol";
 import Testimonials from "@/components/Testimonials";
 import { getCollections } from "@/lib/shopify";
 
-
-export default async function  Home () {
-      const collections = await getCollections();
-    const slicedCollections = collections.slice(1);
+export default async function Home() {
+  const collections = await getCollections();
+  const slicedCollections = collections.slice(1);
   return (
-    <div className="bg-[#F9F9F9] h-full">
-      <Hero/>
-      <About_Us/>
-    <OurProcess/>
-    {slicedCollections && <Collection collections={slicedCollections} />}
-    <ShopNowCol/>
-    <OurBrands/>
-    <Testimonials/>
-    
+    <div className="bg-[#F9F9F9]  max-container ">
+      <Hero />
+      <About_Us />
+      <OurProcess />
+      {slicedCollections && <Collection collections={slicedCollections} />}
+      <ShopNowCol />
+      <OurBrands />
+      <Testimonials />
     </div>
   );
 }

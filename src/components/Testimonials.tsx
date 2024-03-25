@@ -1,134 +1,48 @@
-// 'use client'
-// import React, { useState, useEffect } from 'react';
-// import Image from 'next/image';
-// import BotomLinks from '@/shared/BotomLinks';
-// import { testimonials } from '@/lib/constants';
-// import Quation from '../../public/assets/Quation.svg';
-
-// function useClient() {
-//   const [isDesktop, setIsDesktop] = useState(false);
-
-//   useEffect(() => {
-//     const handleResize = () => {
-//       setIsDesktop(window.innerWidth > 768); 
-//     };
-
-//     handleResize();
-
-//     window.addEventListener('resize', handleResize);
-
-//     return () => window.removeEventListener('resize', handleResize);
-//   }, []);
-
-//   return isDesktop;
-// }
-
-// export default function Testimonials() {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-//   const isDesktop = useClient();
-
-//   const slideToNext = () => {
-//     setCurrentIndex(prevIndex => {
-//       if (isDesktop && prevIndex < testimonials.length - 4) {
-//         return prevIndex + 1;
-//       } else if (!isDesktop && prevIndex < testimonials.length - 1) {
-//         return prevIndex + 1;
-//       } else {
-//         return 0;
-//       }
-//     });
-//   };
-
-//   const slideToPrev = () => {
-//     setCurrentIndex(prevIndex => {
-//       if (prevIndex > 0) {
-//         return prevIndex - 1;
-//       } else if (!isDesktop && prevIndex === 0) {
-//         return testimonials.length - 1;
-//       } else {
-//         return 0;
-//       }
-//     });
-//   };
-
-//   return (
-//     <>
-//       <div className='space-y-2 flexCenter max-container w-full lg:w-[460px] md:w-[460px] mt-10 flex flex-col text-[#000000] up'>
-//         <h1 className='font-Akzidenz text-xs leading-3 uppercase font-normal'>Testimonials</h1>
-//         <p className="text-center font-SaolDisplay text-[25px] font-normal lg:text-[40px] md:text-[40px] leading-10 uppercase">
-//           <span className='italic'>Rave Reviews </span>
-//           <span className='font-normal'>from Our Satisfied</span>
-//           <span className='italic'>Clients</span>
-//         </p>
-//       </div>
-
-//       <section className="overflow-hidden max-container pt-20 relative">
-//         <div className="flex  w-full">
-//           {testimonials.slice(currentIndex, currentIndex + (isDesktop ? 4 : 1)).map((item, index) => (
-//             <div key={index} className="container bg-[#F5F2ED] hover:bg-[#F5F2ED] mx-2 p-4">
-//               <div className="flex flex-col">
-//                 <Image src={Quation} alt="Quation" className="pb-4 pt-4" width={67} height={46} />
-//                 <blockquote className="tracking-[0.05em] leading-7 font-Akzidenz font-light text-2xl pb-4 pt-4">{item.text}</blockquote>
-//                 <p className="text-sm font-light pb-4 pt-4">{item.name}</p>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-
-//         <div className="absolute bottom-4  right-4 flex items-end">
-//           <button onClick={slideToPrev} className=" text-[#000000] rounded-full p-2 mr-4 focus:outline-none">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-//               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-//             </svg>
-//           </button>
-//           <button onClick={slideToNext} className=" text-[#000000] rounded-full p-2 focus:outline-none">
-//             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-//               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-//             </svg>
-//           </button>
-//         </div>
-//         <div className="pt-20 flexCenter">
-//           <BotomLinks text={'See all'} />
-//         </div>
-//       </section>
-//     </>
-//   );
-// }
-
-
-
-
-'use client'
-
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import Image from 'next/image';
-import 'swiper/css/navigation';
-import BotomLinks from '@/shared/BotomLinks';
-import { testimonials } from '@/lib/constants';
-import Quation from '../../public/assets/Quation.svg';
+"use client";
+import React, { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
+import "swiper/css/navigation";
+import { Icon } from "@iconify/react";
+import quotes from "../../public/assets/quotes.svg";
+import { testimonials } from "@/lib/constants";
+import BotomLinks from "@/shared/BotomLinks";
 
 export default function Testimonials() {
+  const swiperRef = useRef<any | null>(null);
+
+  const handleSlideChange = (direction: any) => {
+    if (swiperRef.current) {
+      if (direction === "next") {
+        swiperRef.current.swiper.slideNext();
+      } else if (direction === "prev") {
+        swiperRef.current.swiper.slidePrev();
+      }
+    }
+  };
+
   return (
-    <>
-    <div className=" relative pt-20 flexCenter">
-      <BotomLinks text={" Discover now"} />
-    
-      </div>
-      <div className=' space-y-2 flexCenter max-container w-full lg:w-[460px] md:w-[460px] mt-10 flex flex-col text-[#000000] up'>
-        <h1 className='font-Akzidenz text-[10px] leading-3 uppercase '>Testimonials</h1>
-        <p className="text-center    text-[25px]  lg:text-[40px]   md:text-[40px]  uppercase">
-          <span className='  font-SaolDisplay '>Rave Reviews </span>
-          <span className=' font-SaolDisplayR  '>from Our Satisfied</span>
-          <span className='  font-SaolDisplay '>Clients</span>
-        </p>
+    <div className="  pb-10  mt-10">
+      <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
+        <div className="md:w-[450px] flex-col text-[#000000] up">
+          <h1 className="flexCenter text-[10px] uppercase font-Akzidenz">
+            Testimonials
+          </h1>
+          <p className="text-center uppercase font-normal text-[25px] lg:text-[40px] md:text-[40px] leading-10">
+            <span className="font-SaolDisplay">Rave Reviews </span>
+            <span className="font-SaolDisplayR">from Our Satisfied</span>
+            <span className="font-SaolDisplay">Clients</span>
+          </p>
+        </div>
       </div>
 
-      <section className="overflow-hidden max-container pt-20 ">
+      <section className="overflow-hidden relative  pt-20">
         <Swiper
-          navigation={true}
-          modules={[Navigation]}
+          ref={swiperRef}
+          navigation={{
+            nextEl: ".arrow-right",
+            prevEl: ".arrow-left",
+          }}
           className="mySwiper"
           breakpoints={{
             640: {
@@ -145,21 +59,57 @@ export default function Testimonials() {
             },
           }}
         >
-          <div className="flex  w-[336px]  h-[383px]  ">
-
+          <div className="flex w-[336px] h-[383px]">
             {testimonials.map((item, index) => (
-              <SwiperSlide key={index} className="container bg-[#F5F2ED] hover:bg-[#F5F2ED]   mx-2 p-4 ">
-                <div className="flex  flex-col   ">
-                  <Image src={Quation} alt="Quation" className="pb-4 pt-4" width={67} height={46} />
-                  <blockquote className="font-Akzidenz">{item.text}</blockquote>
-                  <p className=" font-Akzidenzpc pt-5 ">{item.name}</p>
+              <SwiperSlide
+                key={index}
+                className="container bg-[#F5F2ED] hover:bg-[#F5F2ED] mx-2 p-4"
+              >
+                <div className="flex flex-col">
+                  <Image
+                    src={quotes}
+                    alt="quotes"
+                    className="pb-4 pt-4"
+                    width={67}
+                    height={46}
+                  />
+                  <blockquote className="font-Akzidenzlc md:text-[24px] leading-[30px] text-[16px]">
+                    {item.text}
+                  </blockquote>
+                  <p className="font-Akzidenzpc pt-5">{item.name}</p>
                 </div>
               </SwiperSlide>
             ))}
           </div>
         </Swiper>
-       
       </section>
-    </>
+      <div className="  ">
+        <div className="text-black  pt-8  justify-end  flex md:flex pr-10       items-center gap-[12px]">
+          <button
+            className="arrow-left"
+            onClick={() => handleSlideChange("prev")}
+          >
+            <Icon
+              icon="akar-icons:chevron-left"
+              className="w-[20px] h-[20px]"
+              style={{ color: "black" }}
+            />
+          </button>
+          <button
+            className="arrow-right"
+            onClick={() => handleSlideChange("next")}
+          >
+            <Icon
+              className="w-[20px] h-[20px] rotate-180"
+              icon="akar-icons:chevron-left"
+              style={{ color: "black" }}
+            />
+          </button>
+        </div>
+      </div>
+      <div className=" relative pt-20 flexCenter">
+        <BotomLinks text={"  See all"} />
+      </div>
+    </div>
   );
-  }
+}
