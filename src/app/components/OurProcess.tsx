@@ -10,7 +10,7 @@ const OurProcess = () => {
         <div className="md:w-[610px]   flex-col text-[#000000] up">
           <h1 className="    flexCenter  aboutA  font-Akzidenz">Our process</h1>
           <p className="ptext   ">
-            <span className="font-SaolDisplay  italicA">THE </span>
+            <span className="font-SaolDisplay  italicA pr-1">THE </span>
             <span className=" font-SaolDisplayR  normal">
               bespoke tailoring {""}
             </span>

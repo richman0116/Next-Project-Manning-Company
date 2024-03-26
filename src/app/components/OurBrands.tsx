@@ -18,9 +18,9 @@ const OurBrands = () => {
           <div className="md:w-[400px]   flex-col text-[#f1f0f0] up">
             <h1 className="   flexCenter aboutA  font-Akzidenz ">OUR brands</h1>
             <p className="ptext  ">
-              <span className="font-SaolDisplay  italicA ">Discover </span>
+              <span className="font-SaolDisplay  italicA pr-1">Discover </span>
               <span className=" font-SaolDisplayR  normal">
-                our {""} Signature{" "}
+                our Signature {""}
               </span>
               <span className=" font-SaolDisplay  italicA ">Labels</span>
             </p>
