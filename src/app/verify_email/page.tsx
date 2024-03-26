@@ -1,9 +1,9 @@
 import React, { Suspense } from "react";
-import Verifyemail from "../authentication/Verifyemail";
+import VerifyEmail from "../authentication/VerifyEmail";
 const page = () => {
   return (
     <Suspense>
-      <Verifyemail />
+      <VerifyEmail />
     </Suspense>
   );
 };

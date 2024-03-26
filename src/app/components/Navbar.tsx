@@ -28,7 +28,7 @@ const Navbar = () => {
     <Wrapper>
       <nav
         style={{
-          backgroundColor: scrollY ? "#F5F2ED" : "transparent", // This line controls the background color based on scrolling
+          backgroundColor: scrollY ? "#F5F2ED" : "transparent",
           color: scrollY ? "black" : "white",
         }}
         className="transition-all duration-300 ease-in w-full fixed top-0 z-50"

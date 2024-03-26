@@ -3,7 +3,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-export default function Resetpassword() {
+export default function ResetPassword() {
   const [token, setToken] = useState("");
   const [error, setError] = useState(false);
   const [password, setPassword] = useState("");
@@ -12,7 +12,7 @@ export default function Resetpassword() {
   const searchParams = useSearchParams(); // Corrected variable name
   const resetPassword = async () => {
     try {
-      await axios.post("/api/user/reset-password", { token, password });
+      await axios.post("/api/user/reset_password", { token, password });
       setResetSuccess(true);
     } catch (error: any) {
       setError(true);

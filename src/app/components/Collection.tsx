@@ -7,8 +7,8 @@ import Wrapper from "../Shared/Wrapper";
 const Collection = ({ collections }: any) => {
   return (
     <Wrapper>
-      <div className=" w-full flexCenter h-full mt-10 gap-[8px] flex-col">
-        <div className="w-[500px]  flexCenter flex-col text-[#000000] up">
+      <div className=" w-full flexCenter  mt-10 gap-[8px] flex-col">
+        <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
           <h1 className="flexCenter aboutA  font-Akzidenz ">Shop now</h1>
           <p className=" font-SaolDisplay ptext italicA ">Online shop</p>
         </div>

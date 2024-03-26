@@ -8,7 +8,7 @@ const Page = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      const response = await axios.post("/api/user/forgot-password", { email });
+      const response = await axios.post("/api/user/forgot_password", { email });
       setMessage(response.data.message);
       setError("");
     } catch (error: any) {

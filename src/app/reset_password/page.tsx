@@ -1,9 +1,10 @@
 import React, { Suspense } from "react";
-import Resetpassword from "../authentication/Resetpassword";
+import ResetPassword from "../authentication/ResetPassword";
+
 const page = () => {
   return (
     <Suspense>
-      <Resetpassword />
+      <ResetPassword />
     </Suspense>
   );
 };

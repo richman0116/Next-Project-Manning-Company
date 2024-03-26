@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-const Verifyemail = () => {
+const VerifyEmail = () => {
   const [token, setToken] = useState("");
   const searchParams = useSearchParams();
   const [loading, setLoading] = useState(true);
@@ -33,4 +33,4 @@ const Verifyemail = () => {
   );
 };
 
-export default Verifyemail;
+export default VerifyEmail;
