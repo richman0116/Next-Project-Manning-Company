@@ -8,7 +8,7 @@ const About_Us = () => {
       <div className="  w-full flexCenter h-full mt-10 gap-[8px] flex-col">
         <div className="md:w-[581px]   flex-col text-[#000000] up">
           <h1 className="    flexCenter aboutA  font-Akzidenz">About us</h1>
-          <p className="ptext ">
+          <p className="ptext p-2 ">
             <span className="font-SaolDisplay   italicA ">Elevating </span>
             <span className=" font-SaolDisplayR  normal ">
               Style through Precision
@@ -17,7 +17,7 @@ const About_Us = () => {
           </p>
         </div>
         <div className="md:p-10 lg:p-10 p-4 md:w-full lg:w-full   text-center">
-          <p className="  font-Akzidenzlc md:about">
+          <p className="  font-Akzidenzlc about md:leading-[38px]  leading-[18px]">
             At Manning Company, our commitment is simple yet profound: to
             deliver bespoke tailored garments that embody the epitome of
             individual panache and personality. Renowned for producing only the

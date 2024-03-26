@@ -5,7 +5,7 @@
 /* fonts.css */
 
 .ptext {
-  @apply text-center leading-[25px]   md:leading-[40px]  text-[28px] md:text-[40px]   lg:text-[40px];
+  @apply text-center leading-[25px]   md:leading-[40px]  text-[25px] md:text-[40px]   lg:text-[40px];
 }
 .flexCenter {
   @apply flex items-center justify-center;
@@ -109,7 +109,6 @@
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
-  line-height: 15px; /* 150% */
   text-transform: uppercase;
 }
 .about {

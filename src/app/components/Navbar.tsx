@@ -28,10 +28,10 @@ const Navbar = () => {
     <Wrapper>
       <nav
         style={{
-          backgroundColor: scrollY ? "white" : "transparent",
+          backgroundColor: scrollY ? "#F5F2ED" : "transparent", // This line controls the background color based on scrolling
           color: scrollY ? "black" : "white",
         }}
-        className="transition-all duration-300 ease-in   w-full bg-black  fixed top-0 z-50   "
+        className="transition-all duration-300 ease-in w-full fixed top-0 z-50"
       >
         <div className=" hidden    lg:block md:block">
           <div className="justify-between flex  p-8">
@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
         {/* Mobile menu */}
 
-        <div className="lg:hidden md:hidden fixed top-0 left-0 w-full  bg-[#F5F2ED] z-10 flex justify-between p-2">
+        <div className="lg:hidden md:hidden fixed top-0  w-full  bg-[#F5F2ED] z-10 flex justify-between p-2">
           <div className="   text-[#000000]  ">
             <h1 className="    font-Akzidenzpc uppercase text-[14.44px] ">
               Manning company
@@ -81,7 +81,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex  gap-2  px-12">
+          <div className="flex  gap-2   ">
             <div className=" pt-1.5 ">
               <FaShoppingBag size={24} color="black" />
             </div>
