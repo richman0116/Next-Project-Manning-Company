@@ -1,14 +1,17 @@
 import type { Metadata } from "next";
-import { Inter  } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import "./globals.css";
 
-
-import Navbar from "@/components/Navbar";
-import { Akzidenz, Akzidenzlc, Akzidenzpc, SaolDisplay, SaolDisplayR } from "@/font_utils/customFonts";
-import Footer from "@/components/Footer";
-
-
+import {
+  Akzidenz,
+  Akzidenzlc,
+  Akzidenzpc,
+  SaolDisplay,
+  SaolDisplayR,
+} from "@/font_utils/customFonts";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,13 +27,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${Akzidenz.variable} ${SaolDisplay.variable} 
+      <body
+        className={`${Akzidenz.variable} ${SaolDisplay.variable} 
       ${Akzidenzpc.variable} 
-      ${SaolDisplayR.variable} ${Akzidenzlc.variable}`}>
-      <Navbar />
+      ${SaolDisplayR.variable} ${Akzidenzlc.variable}`}
+      >
+        <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }

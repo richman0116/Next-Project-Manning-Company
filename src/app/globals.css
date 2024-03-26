@@ -4,52 +4,128 @@
 
 /* fonts.css */
 
-@font-face {
-  font-family: 'Akzidenz-Grotesk Pro';
-  src: url('/path/to/Akzidenz-Grotesk-Pro.woff2') format('woff2'),
-       url('/path/to/Akzidenz-Grotesk-Pro.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+.ptext {
+  @apply text-center leading-[25px]   md:leading-[40px]  text-[28px] md:text-[40px]   lg:text-[40px];
+}
+.flexCenter {
+  @apply flex items-center justify-center;
 }
 
-.custom-font1 {
-  font-family: 'Akzidenz-Grotesk Pro', sans-serif;
-  font-size: 37px;
-  font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 0;
+.footer {
+  @apply font-normal my-2 block text-white text-sm leading-[15px] font-Akzidenz;
+}
+
+.shopnow {
+  @apply font-SaolDisplay  pt-52 text-center leading-10  italic font-light  absolute inset-0  text-4xl;
+}
+
+.form {
+  @apply p-2 bg-[#0F0F0F] rounded-md mb-4;
+}
+
+.fheading {
+  @apply text-xs uppercase text-[#FFFFFF] font-medium;
+}
+.proces {
+  @apply flexCenter font-SaolDisplay   text-center   font-light italic absolute inset-0 text-[#FFFFFF] md:text-4xl pt-24  md:pt-52;
+}
+.manning {
   text-align: center;
+  font-size: 36.655px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38.182px; /* 104.167% */
+  text-transform: uppercase;
+}
+.manningsh {
+  font-size: 15.273px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.909px; /* 150% */
+  text-transform: uppercase;
 }
 
-.max-container {
-    @apply max-w-[1600px];
-  }
+.linksf {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 116.667% */
+}
 
- 
+.freme8 {
+  color: var(--White, #fff);
+  font-family: "Akzidenz-Grotesk Pro";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  text-transform: uppercase;
+}
 
-  .flexCenter {
-    @apply flex items-center justify-center;
-  }
+.fremeh8 {
+  color: var(--White, #fff);
+  font-style: normal;
+  font-weight: 400;
+  /* 91.667% */
+  text-transform: uppercase;
+}
 
+.fremei8 {
+  color: var(--White, #fff);
+  font-style: italic;
+  font-weight: 300;
+}
 
-  .footer {
-    @apply font-normal my-2 block text-white text-sm leading-[15px] font-Akzidenz;
-  }
-  
-  .shopnow {
-    @apply font-SaolDisplay  pt-52 text-center leading-10 font-light italic absolute inset-0 text-[#FFFFFF] text-4xl  
-  }
+.Decades {
+  color: var(--White, #fff);
+  font-style: normal;
+  font-weight: 400;
+}
 
- .form {
-  @apply p-2 bg-[#0F0F0F] rounded-md mb-4
- }
+.bottomL {
+  color: var(--White, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
 
- .fheading {
-  @apply text-xs uppercase text-[#FFFFFF] font-medium
- }
+.italicA {
+  color: var(--Black, #000);
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: uppercase;
+}
 
-  
- .proces {
-  @apply flexCenter font-SaolDisplay   text-center leading-10 font-light italic absolute inset-0 text-[#FFFFFF] md:text-4xl md:pt-52  
+.normal {
+  color: var(--Black, #000);
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.aboutA {
+  color: var(--Black, #000);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  text-transform: uppercase;
+}
+.about {
+  color: var(--Black, #000);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 125% */
+}
+
+.ColDisc {
+  color: var(--Black, #000);
+  font-family: Apercu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
