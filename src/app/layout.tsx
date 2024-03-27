@@ -12,6 +12,7 @@ import {
 } from "@/font_utils/customFonts";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Wrapper from "./Shared/Wrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,9 +33,11 @@ export default function RootLayout({
       ${Akzidenzpc.variable} 
       ${SaolDisplayR.variable} ${Akzidenzlc.variable}`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <Wrapper>
+          <Navbar />
+          {children}
+          <Footer />
+        </Wrapper>
       </body>
     </html>
   );

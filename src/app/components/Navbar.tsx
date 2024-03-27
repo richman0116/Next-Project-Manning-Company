@@ -38,7 +38,7 @@ const Navbar = () => {
           backgroundColor: navbarBackground,
           color: navbarTextColor,
         }}
-        className="transition-all duration-300 ease-in w-full fixed top-0 z-50"
+        className="transition-all duration-300 ease-in w-full lg:max-w-[2000px] mx-auto fixed top-0 z-50"
       >
         <div className=" hidden    lg:block md:block">
           <div className="justify-between flex  p-8">

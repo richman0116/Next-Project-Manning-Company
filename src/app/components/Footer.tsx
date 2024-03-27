@@ -7,7 +7,7 @@ import Wrapper from "../Shared/Wrapper";
 const Footer = () => {
   return (
     <Wrapper>
-      <div className="bg-[#F9F9F9] ">
+      <div className="bg-[#F9F9F9]   ">
         <div className="bg-[#000000]  w-full pt-10">
           <div className="flex flex-col gap-1 text-white flexCenter  ">
             <h1 className=" font-Akzidenzpc  text-3xl uppercase">
@@ -18,7 +18,7 @@ const Footer = () => {
               <p className=" font-Akzidenz ">Since 1979</p>
             </div>
           </div>
-          <div className=" w-full flex md:flex-row lg:flex-row   flex-col-reverse  ">
+          <div className=" w-full  flexCenter flex md:flex-row lg:flex-row   flex-col-reverse  ">
             <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-2">
               <div className="p-5 ">
                 <div className="fheading">Online shop</div>
