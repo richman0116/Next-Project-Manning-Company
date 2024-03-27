@@ -23,5 +23,16 @@ const SaolDisplayR = localFont({
   src: [{ path: "../../public/font/SaolDisplay-Regular.ttf" }],
   variable: "--font-SaolDisplayR",
 });
+const SaolDisplayl = localFont({
+  src: [{ path: "../../public/font/akzidenzgroteskpro_light.ttf" }],
+  variable: "--font-SaolDisplayl",
+});
 
-export { SaolDisplay, Akzidenz, SaolDisplayR, Akzidenzpc, Akzidenzlc };
+export {
+  SaolDisplay,
+  Akzidenz,
+  SaolDisplayR,
+  Akzidenzpc,
+  Akzidenzlc,
+  SaolDisplayl,
+};

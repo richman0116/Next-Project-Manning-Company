@@ -15,7 +15,7 @@ const OurBrands = () => {
     <Wrapper>
       <section className="overflow-hidden  mt-10  hidden md:block lg:block ">
         <div className=" overflow-hidden flexCenter   h-full  gap-[8px] flex-col">
-          <div className="md:w-[400px]   flex-col text-[#f1f0f0] up">
+          <div className="md:w-[350px]   flex-col text-[#f1f0f0] up">
             <h1 className="   flexCenter aboutA  font-Akzidenz ">OUR brands</h1>
             <p className="ptext  ">
               <span className="font-SaolDisplay  italicA pr-1">Discover </span>

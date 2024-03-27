@@ -7,7 +7,7 @@ const OurProcess = () => {
   return (
     <Wrapper>
       <div className=" w-full flexCenter  h-full mt-20  flex-col">
-        <div className="md:w-[610px]   flex-col text-[#000000] up">
+        <div className="md:w-[400px]   flex-col text-[#000000] up">
           <h1 className="    flexCenter  aboutA  font-Akzidenz">Our process</h1>
           <p className="ptext   ">
             <span className="font-SaolDisplay  italicA pr-1">THE </span>

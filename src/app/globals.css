@@ -5,7 +5,7 @@
 /* fonts.css */
 
 .ptext {
-  @apply text-center leading-[25px]   md:leading-[40px]  text-[25px] md:text-[40px]   lg:text-[40px];
+  @apply text-center leading-[25px]   md:leading-[40px]  text-[25px] md:text-[30px]   lg:text-[30px];
 }
 .flexCenter {
   @apply flex items-center justify-center;

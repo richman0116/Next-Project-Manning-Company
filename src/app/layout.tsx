@@ -9,6 +9,7 @@ import {
   Akzidenzpc,
   SaolDisplay,
   SaolDisplayR,
+  SaolDisplayl,
 } from "@/font_utils/customFonts";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -31,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${Akzidenz.variable} ${SaolDisplay.variable} 
       ${Akzidenzpc.variable} 
-      ${SaolDisplayR.variable} ${Akzidenzlc.variable}`}
+      ${SaolDisplayR.variable} ${Akzidenzlc.variable} ${SaolDisplayl.variable}`}
       >
         <Wrapper>
           <Navbar />
