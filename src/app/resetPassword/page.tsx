@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import ResetPassword from "../authentication/ResetPassword";
+import ResetPassword from "@/app/authentication/Resetpassword";
 
 const page = () => {
   return (

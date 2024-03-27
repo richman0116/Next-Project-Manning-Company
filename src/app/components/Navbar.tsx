@@ -9,27 +9,34 @@ import { RiSearch2Line } from "react-icons/ri";
 import { PiWhatsappLogo } from "react-icons/pi";
 import { FaRegUser, FaShoppingBag } from "react-icons/fa";
 import { NAV_LINKS } from "@/lib/constants";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [scrollY, setScrollY] = useState(false);
+  const pathname = usePathname();
+
   const toggleMenu = () => setShowMenu(!showMenu);
+
   const handleScroll = () => {
-    if (window.scrollY > 60) {
-      setScrollY(true);
-    } else {
-      setScrollY(false);
-    }
+    setScrollY(window.scrollY > 60);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isHomepage = pathname === "/";
+  const navbarBackground = isHomepage && !scrollY ? "transparent" : "#F5F2ED";
+  const navbarTextColor = isHomepage && !scrollY ? "white" : "black";
+
   return (
     <Wrapper>
       <nav
         style={{
-          backgroundColor: scrollY ? "#F5F2ED" : "transparent",
-          color: scrollY ? "black" : "white",
+          backgroundColor: navbarBackground,
+          color: navbarTextColor,
         }}
         className="transition-all duration-300 ease-in w-full fixed top-0 z-50"
       >

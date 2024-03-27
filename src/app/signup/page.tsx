@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
+import { GrTask } from "react-icons/gr";
 import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 export default function Page() {
@@ -9,7 +10,8 @@ export default function Page() {
   const [user, setUser] = useState({
     email: "",
     password: "",
-    username: "",
+    lastname: "",
+    firstname: "",
   });
   const [buttonDisabled, setButtonDisabled] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -44,7 +46,8 @@ export default function Page() {
     if (
       user.email.length > 0 &&
       user.password.length > 0 &&
-      user.username.length > 0
+      user.firstname.length > 0 &&
+      user.lastname.length > 0
     ) {
       setButtonDisabled(false);
     } else {
@@ -53,72 +56,108 @@ export default function Page() {
   }, [user]);
 
   return (
-    <div className="flex flex-col items-center mt-8">
-      <h1 className="text-2xl font-bold">
-        {loading ? "processing" : "signup"}
+    <div className="flex flex-col pt-20 lg:pt-52 md:pt-52 bg-[#F9F9F9] items-center ">
+      <h1 className="text-[16px] not-italic pt-12 font-SaolDisplayR">
+        {loading ? "Processing" : "Create account"}
       </h1>
-      <hr className="w-full my-4" />
+
       {isEmailRegistered && (
         <p className="text-red-500 mb-4">
           You have already registered. Please login to your account.
         </p>
       )}
-      <div className="w-64">
+      <div className="md:w-[520px] lg:w-[520px] p-6 pt-10">
         <label
-          htmlFor="username"
-          className="block mb-1 font-medium text-gray-700"
+          htmlFor="email"
+          className="text-[16px] font-Akzidenz text-[#666]"
         >
-          Username
+          First name
         </label>
         <input
-          id="username"
+          id="firstname"
           type="text"
-          placeholder="Username"
-          value={user.username}
-          onChange={(e) => setUser({ ...user, username: e.target.value })}
-          className="w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:border-blue-500"
+          placeholder="firstname"
+          value={user.firstname}
+          onChange={(e) => setUser({ ...user, firstname: e.target.value })}
+          className="w-full px-4 py-2 mb-4 border bg-[#F9F9F9] rounded-lg focus:outline-none focus:border-blue-500"
         />
-        <label htmlFor="email" className="block mb-1 font-medium text-gray-700">
-          Email
+        <label
+          htmlFor="email"
+          className="text-[16px] font-Akzidenz text-[#666]"
+        >
+          Last name
         </label>
+        <input
+          id="lastname"
+          type="lastname"
+          placeholder="lastname"
+          value={user.lastname}
+          onChange={(e) => {
+            setUser({ ...user, lastname: e.target.value });
+            setIsEmailRegistered(false);
+          }}
+          className="w-full px-4 py-2 mb-4 border bg-[#F9F9F9] rounded-lg focus:outline-none focus:border-blue-500"
+        />
+        <label
+          htmlFor="email"
+          className="text-[16px] font-Akzidenz text-[#666]"
+        >
+          Your email
+        </label>
+
         <input
           id="email"
           type="email"
-          placeholder="Email"
+          placeholder="email"
           value={user.email}
-          onChange={(e) => {
-            setUser({ ...user, email: e.target.value });
-            setIsEmailRegistered(false);
-          }}
-          className="w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:border-blue-500"
+          onChange={(e) => setUser({ ...user, email: e.target.value })}
+          className="w-full px-4 py-2 mb-4 border bg-[#F9F9F9] rounded-lg focus:outline-none focus:border-blue-500"
         />
         <label
           htmlFor="password"
-          className="block mb-1 font-medium text-gray-700"
+          className="text-[16px] font-Akzidenz text-[#666]"
         >
-          Password
+          Your password
         </label>
+
         <input
           id="password"
           type="password"
           placeholder="Password"
           value={user.password}
           onChange={(e) => setUser({ ...user, password: e.target.value })}
-          className="w-full px-4 py-2 mb-2 border rounded-lg focus:outline-none focus:border-blue-500"
+          className="w-full px-4 py-2 mb-4 border bg-[#F9F9F9] rounded-lg focus:outline-none focus:border-blue-500"
         />
-        <button
-          onClick={onSignup}
-          disabled={buttonDisabled}
-          className={`w-full px-4 py-2 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none ${
-            buttonDisabled ? "cursor-not-allowed opacity-50" : ""
-          }`}
-        >
-          {loading ? "Signing up..." : "Signup"}
-        </button>
+        <div className=" flex gap-3">
+          <div className=" pt-4">
+            <GrTask />
+          </div>
+          <p className="text-[14px] font-Akzidenz text-[#666]">
+            Use 8 or more characters <br />
+            One Uppercase character <br />
+            At least 1 numerical character
+          </p>
+        </div>
+        <div className=" flexCenter">
+          <button
+            onClick={onSignup}
+            disabled={buttonDisabled}
+            className={`px-4 py-2 mt-4 text-white  text-[16px] font-Akzidenz flex justify-center  bg-black ${
+              buttonDisabled ? "cursor-not-allowed opacity-50" : ""
+            }`}
+          >
+            {loading ? "Signing up..." : "Signup"}
+          </button>
+        </div>
       </div>
-      <Link href="/login" className="text-blue-500 hover:underline mt-4">
-        Already registered? Log in here
-      </Link>
+      <p className="pt-6 pb-10 ">
+        <Link
+          href="/signup"
+          className="border-b pb-1 text-[16px] font-Akzidenz text-[#666]  "
+        >
+          Sign In
+        </Link>
+      </p>
     </div>
   );
 }
