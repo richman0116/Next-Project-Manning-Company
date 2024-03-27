@@ -9,7 +9,7 @@ const BotomLinks = ({ text }: Props) => {
     <div>
       <Link
         href={""}
-        className=" border-b border-current md:bottomL text-[10px]  pb-1"
+        className=" border-b border-current md:bottomL text-[14px]  pb-1"
       >
         {text}
       </Link>

@@ -38,9 +38,9 @@ const Navbar = () => {
           backgroundColor: navbarBackground,
           color: navbarTextColor,
         }}
-        className="transition-all duration-300 ease-in w-full lg:max-w-[2000px] mx-auto fixed top-0 z-50"
+        className="transition-all duration-300  ease-in w-full lg:max-w-[2000px] mx-auto fixed top-0 z-50"
       >
-        <div className=" hidden    lg:block md:block">
+        <div className=" hidden  h-[214px]   lg:block md:block">
           <div className="justify-between flex  p-8">
             <div className="flex gap-3">
               <RiSearch2Line size={24} />
@@ -63,7 +63,7 @@ const Navbar = () => {
 
           <div className=" flexCenter ">
             <ul className="hidden h-full  gap-[15px] lg:flex">
-              {NAV_LINKS.slice(0, 4).map((link) => (
+              {NAV_LINKS.slice(0, 6).map((link) => (
                 <Link
                   href={link.href}
                   key={link.key}
