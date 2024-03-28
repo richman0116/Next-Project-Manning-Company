@@ -7,6 +7,7 @@ import {
   Akzidenz,
   Akzidenzlc,
   Akzidenzpc,
+  Apercu,
   SaolDisplay,
   SaolDisplayR,
   SaolDisplayl,
@@ -32,7 +33,7 @@ export default function RootLayout({
       <body
         className={`${Akzidenz.variable} ${SaolDisplay.variable} 
       ${Akzidenzpc.variable} 
-      ${SaolDisplayR.variable} ${Akzidenzlc.variable} ${SaolDisplayl.variable}`}
+      ${SaolDisplayR.variable} ${Akzidenzlc.variable} ${Apercu.variable} ${SaolDisplayl.variable}`}
       >
         <Wrapper>
           <Navbar />

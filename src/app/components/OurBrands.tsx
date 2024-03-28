@@ -51,7 +51,7 @@ const OurBrands = () => {
                   />
                 </div>
                 <div className="flex flexCenter gap-2">
-                  <h2 className="ColDisc">{item.name}</h2>
+                  <h2 className="Apercu font-Apercu">{item.name}</h2>
                   <Image src={arrow} alt={"Arrow Icon"} />
                 </div>
               </div>

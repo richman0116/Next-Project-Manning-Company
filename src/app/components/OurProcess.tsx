@@ -26,7 +26,9 @@ const OurProcess = () => {
                   className="md:w-[252px] object-cover md:h-[339px]"
                   src={Frame[0].src}
                 />
-                <p className="flexCenter proces text-white ">{Frame[0].name}</p>
+                <p className="flexCenter   proces text-white ">
+                  {Frame[0].name}
+                </p>
               </div>
               <div className="  relative">
                 <Image

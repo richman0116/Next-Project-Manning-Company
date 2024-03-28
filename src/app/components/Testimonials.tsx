@@ -35,7 +35,7 @@ export default function Testimonials() {
               <span className="font-SaolDisplayl  normal">
                 from Our Satisfied
               </span>
-              <span className="font-SaolDisplay  italicA px-0.5">Clients</span>
+              <span className="font-SaolDisplay  italicA px-1">Clients</span>
             </p>
           </div>
         </div>
@@ -54,16 +54,16 @@ export default function Testimonials() {
                 spaceBetween: 0,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 5,
                 spaceBetween: 0,
               },
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 5,
                 spaceBetween: 0,
               },
             }}
           >
-            <div className="flex w-[336px] h-[383px]">
+            <div className="flex  w-60">
               {testimonials.map((item, index) => (
                 <SwiperSlide
                   key={index}
@@ -73,14 +73,16 @@ export default function Testimonials() {
                     <Image
                       src={quotes}
                       alt="quotes"
-                      className="pb-4 pt-4"
+                      className="pb-4 px-3 pt-4"
                       width={67}
                       height={46}
                     />
                     <blockquote className="font-Akzidenzlc about">
                       {item.text}
                     </blockquote>
-                    <p className="ColDisc pt-10">{item.name}</p>
+                    <p className="Apercu px-3 pb-6 font-Apercu pt-20">
+                      {item.name}
+                    </p>
                   </div>
                 </SwiperSlide>
               ))}

@@ -85,38 +85,33 @@ export const shop_now_image = [
 
 export const brands = [
   {
-    name: "Fabrics",
+    name: "Hardy Minnis",
     alt: "brand1",
     src: brand1,
   },
   {
-    name: "Fabrics",
+    name: "Dashing Tweeds",
     alt: "brand2",
     src: brand2,
   },
   {
-    name: "Fabrics",
+    name: "Brook Taverner",
     alt: "brand3",
     src: brand3,
   },
   {
-    name: "Fabrics",
+    name: "Dashing Tweeds",
     alt: "brand4",
     src: brand4,
   },
   {
-    name: "Fabrics",
+    name: "Fox Brothers & Co LTD",
     alt: "brand5",
     src: brand5,
   },
 
   {
-    name: "Fabrics",
-    alt: "brand5",
-    src: brand5,
-  },
-  {
-    name: "Fabrics",
+    name: "Hardy Minnis",
     alt: "brand5",
     src: brand5,
   },
@@ -125,27 +120,27 @@ export const brands = [
 export const testimonials = [
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 1",
+    name: "Freda Collier ",
   },
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 2",
+    name: "Freda Collier ",
   },
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 3",
+    name: "Freda Collier",
   },
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 4",
+    name: "Freda Collier ",
   },
 
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 5",
+    name: "Freda Collier ",
   },
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
-    name: "Freda Collier 6",
+    name: "Freda Collier",
   },
 ];

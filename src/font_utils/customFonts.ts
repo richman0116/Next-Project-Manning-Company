@@ -27,7 +27,10 @@ const SaolDisplayl = localFont({
   src: [{ path: "../../public/font/SaolDisplay-Light.ttf" }],
   variable: "--font-SaolDisplayl",
 });
-
+const Apercu = localFont({
+  src: [{ path: "../../public/font/Apercu_Regular.otf" }],
+  variable: "--font-Apercu_Regular",
+});
 export {
   SaolDisplay,
   Akzidenz,
@@ -35,4 +38,5 @@ export {
   Akzidenzpc,
   Akzidenzlc,
   SaolDisplayl,
+  Apercu,
 };

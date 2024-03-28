@@ -21,6 +21,7 @@ const config: Config = {
         Akzidenzpc: ["var(--font-Akzidenzpc)"],
         Akzidenzlc: ["var(--font-Akzidenzlc)"],
         SaolDisplayl: ["var(--font-SaolDisplayl)"],
+        Apercu: ["var(--font-Apercu_Regular)"],
       },
       screens: {
         sm: "350px",

@@ -10,7 +10,7 @@ const Collection = ({ collections }: any) => {
       <div className=" w-full flexCenter  mt-10 gap-[8px] flex-col">
         <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
           <h1 className="flexCenter aboutA  font-Akzidenz ">Shop now</h1>
-          <p className=" font-SaolDisplay ptext italicA ">Online shop</p>
+          <p className=" font-SaolDisplay shopH">Online shop</p>
         </div>
         <div className="  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-10 gap-2 md:p-5 p-1">
           {collections.map((collection: any) => (
@@ -26,7 +26,9 @@ const Collection = ({ collections }: any) => {
                     />
                   )}
                   <div className=" flex gap-1 ">
-                    <h2 className="mb-3 pt-2 ColDisc">{collection.title}</h2>
+                    <h2 className="mb-3 pt-2 Apercu font-Apercu">
+                      {collection.title}
+                    </h2>
                     <Image src={arrow} alt={""} className=" "></Image>
                   </div>
                 </div>
