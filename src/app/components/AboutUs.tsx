@@ -10,7 +10,7 @@ const About_Us = () => {
           <h1 className="    flexCenter aboutA  font-Akzidenz">About us</h1>
           <p className="ptext p-2 ">
             <span className="font-SaolDisplay   italicA  ">Elevating </span>
-            <span className=" font-SaolDisplayR  normal ">
+            <span className="  font-SaolDisplayl  normal ">
               Style through Precision
             </span>
             <span className=" font-SaolDisplay italicA  ">Tailoring</span>

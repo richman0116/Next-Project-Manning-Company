@@ -26,13 +26,13 @@ export default function Testimonials() {
     <Wrapper>
       <div className="  pb-10  mt-10">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
-          <div className="md:w-[350px] flex-col text-[#000000] up">
+          <div className="md:w-[450px] flex-col text-[#000000] up">
             <h1 className="flexCenter aboutA  font-Akzidenz">Testimonials</h1>
             <p className="  ptext ">
               <span className="font-SaolDisplay  italicA p-1">
                 Rave Reviews{" "}
               </span>
-              <span className="font-SaolDisplayR  normal">
+              <span className="font-SaolDisplayl  normal">
                 from Our Satisfied
               </span>
               <span className="font-SaolDisplay  italicA px-0.5">Clients</span>

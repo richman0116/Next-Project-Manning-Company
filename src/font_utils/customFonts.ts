@@ -24,7 +24,7 @@ const SaolDisplayR = localFont({
   variable: "--font-SaolDisplayR",
 });
 const SaolDisplayl = localFont({
-  src: [{ path: "../../public/font/akzidenzgroteskpro_light.ttf" }],
+  src: [{ path: "../../public/font/SaolDisplay-Light.ttf" }],
   variable: "--font-SaolDisplayl",
 });
 

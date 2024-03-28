@@ -19,7 +19,7 @@ const OurBrands = () => {
             <h1 className="   flexCenter aboutA  font-Akzidenz ">OUR brands</h1>
             <p className="ptext  ">
               <span className="font-SaolDisplay  italicA pr-1">Discover </span>
-              <span className=" font-SaolDisplayR  normal">
+              <span className=" font-SaolDisplayl  normal">
                 our Signature {""}
               </span>
               <span className=" font-SaolDisplay  italicA ">Labels</span>

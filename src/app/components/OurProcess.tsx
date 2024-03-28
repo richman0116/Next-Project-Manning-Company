@@ -11,7 +11,7 @@ const OurProcess = () => {
           <h1 className="    flexCenter  aboutA  font-Akzidenz">Our process</h1>
           <p className="ptext   ">
             <span className="font-SaolDisplay  italicA pr-1">THE </span>
-            <span className=" font-SaolDisplayR  normal">
+            <span className=" font-SaolDisplayl  normal">
               bespoke tailoring {""}
             </span>
             <span className=" font-SaolDisplay  italicA ">Process</span>
