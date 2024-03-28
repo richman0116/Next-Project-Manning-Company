@@ -85,12 +85,18 @@ const Navbar = () => {
               <p className="font-Akzidenz text-[6px]">Since 1979</p>
             </div>
           </div>
-          <div className="flex gap-2">
-            <div className="pt-1.5">
-              <Image src={bagIcon} alt="Bag" width={24} height={24} />
+          <div className="flex gap-2 p-2">
+            <div className="">
+              <Image src={bagNormal} alt="Bag" width={24} height={24} />
             </div>
             <span onClick={toggleMenu} className="cursor-pointer">
-              <Image src={hamburgerIcon} alt="Menu" width={24} height={24} />
+              <Image
+                src={hamburgerIcon}
+                alt="Menu"
+                width={24}
+                height={24}
+                className="pt-1"
+              />
             </span>
           </div>
         </div>
