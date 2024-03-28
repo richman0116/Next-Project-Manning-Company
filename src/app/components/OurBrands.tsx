@@ -13,7 +13,7 @@ import Wrapper from "../Shared/Wrapper";
 const OurBrands = () => {
   return (
     <Wrapper>
-      <section className="overflow-hidden mt-10 hidden md:block lg:block">
+      <section className="overflow-hidden mt-20 hidden md:block lg:block">
         <div className="overflow-hidden w-full flexCenter  gap-[8px] flex-col">
           <div className="md:w-[350px] flex-col text-[#f1f0f0] up">
             <h1 className="flexCenter aboutA uppercase font-Akzidenz">

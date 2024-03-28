@@ -7,14 +7,14 @@ import Wrapper from "../Shared/Wrapper";
 const Collection = ({ collections }: any) => {
   return (
     <Wrapper>
-      <div className=" w-full flexCenter  mt-10 gap-[8px] flex-col">
+      <div className=" w-full flexCenter  mt-20 gap-[8px] flex-col">
         <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
           <h1 className="flexCenter aboutA  uppercase font-Akzidenz ">
             Shop now
           </h1>
           <p className=" font-SaolDisplay   italicA text-[40px]">Online shop</p>
         </div>
-        <div className="  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-10 gap-2 md:p-5 p-1">
+        <div className="  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-5 gap-2 p-1">
           {collections.map((collection: any) => (
             <Link key={collection.handle} href={collection.path}>
               <div className="relative  mb-8 rounded overflow-hidden">

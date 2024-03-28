@@ -46,12 +46,12 @@ const Navbar = () => {
         className="transition-all duration-300 ease-in w-full lg:max-w-[2000px] mx-auto fixed top-0 z-50"
       >
         <div className="hidden h-[214px] lg:block md:block">
-          <div className="justify-between flex p-6">
-            <div className="flex gap-3">
+          <div className="justify-between flex px-6 pr-6 ">
+            <div className="flex gap-3 ">
               <Image src={searchIcon} alt="Search" width={24} height={24} />
               <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
             </div>
-            <div className="flex-col flex">
+            <div className="flex-col p-6 flex">
               <h1 className="font-Akzidenzpc manning">Manning company</h1>
               <div className="flexCenter flex-col">
                 <p className="font-Akzidenz manningsh">Bespoke tailors</p>
@@ -85,7 +85,7 @@ const Navbar = () => {
               <p className="font-Akzidenz text-[6px]">Since 1979</p>
             </div>
           </div>
-          <div className="flex gap-2 p-2">
+          <div className="flex gap-3 p-2">
             <div className="">
               <Image src={bagNormal} alt="Bag" width={24} height={24} />
             </div>

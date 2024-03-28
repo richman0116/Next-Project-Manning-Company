@@ -24,7 +24,7 @@ export default function Testimonials() {
 
   return (
     <Wrapper>
-      <div className="  pb-10  mt-10">
+      <div className="  pb-10  mt-20">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
           <div className="md:w-[450px] flex-col text-[#000000] up">
             <h1 className="flexCenter aboutA  uppercase font-Akzidenz">
