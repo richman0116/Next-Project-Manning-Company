@@ -9,8 +9,10 @@ const Collection = ({ collections }: any) => {
     <Wrapper>
       <div className=" w-full flexCenter  mt-10 gap-[8px] flex-col">
         <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
-          <h1 className="flexCenter aboutA  font-Akzidenz ">Shop now</h1>
-          <p className=" font-SaolDisplay shopH">Online shop</p>
+          <h1 className="flexCenter aboutA  uppercase font-Akzidenz ">
+            Shop now
+          </h1>
+          <p className=" font-SaolDisplay   italicA text-[40px]">Online shop</p>
         </div>
         <div className="  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-10 gap-2 md:p-5 p-1">
           {collections.map((collection: any) => (

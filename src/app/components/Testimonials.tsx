@@ -27,7 +27,9 @@ export default function Testimonials() {
       <div className="  pb-10  mt-10">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
           <div className="md:w-[450px] flex-col text-[#000000] up">
-            <h1 className="flexCenter aboutA  font-Akzidenz">Testimonials</h1>
+            <h1 className="flexCenter aboutA  uppercase font-Akzidenz">
+              Testimonials
+            </h1>
             <p className="  ptext ">
               <span className="font-SaolDisplay  italicA p-1">
                 Rave Reviews{" "}

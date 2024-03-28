@@ -7,10 +7,7 @@ interface Props {
 const BotomLinks = ({ text }: Props) => {
   return (
     <div>
-      <Link
-        href={""}
-        className=" border-b border-current md:bottomL text-[14px]  pb-1"
-      >
+      <Link href={""} className=" aboutA  font-Akzidenz underline pb-1">
         {text}
       </Link>
     </div>

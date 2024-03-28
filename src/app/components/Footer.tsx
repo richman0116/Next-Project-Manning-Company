@@ -190,8 +190,10 @@ const Footer = () => {
                     <p className="font-Akzidenz">+852 5169 7732</p>
                   </div>
                 </div>
-                <div className="flex  gap-3  ">
-                  <Image src={locationIcon} alt="Location Icon" />
+                <div className="flex  gap-[10px]  ">
+                  <div>
+                    <Image src={locationIcon} alt="Location Icon" />
+                  </div>
                   <p className="font-Akzidenz">
                     Shop 22B, G/F., Hankow Centre,
                     <br />

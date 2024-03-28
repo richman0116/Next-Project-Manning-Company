@@ -7,7 +7,9 @@ const About_Us = () => {
     <Wrapper>
       <div className="  w-full flexCenter  mt-10 gap-[8px] flex-col">
         <div className="md:w-[581px]   flex-col text-[#000000] up">
-          <h1 className="    flexCenter aboutA  font-Akzidenz">About us</h1>
+          <h1 className="    flexCenter aboutA  font-Akzidenz uppercase">
+            About us
+          </h1>
           <p className="ptext p-2 ">
             <span className="font-SaolDisplay   italicA  ">Elevating </span>
             <span className="  font-SaolDisplayl  normal ">

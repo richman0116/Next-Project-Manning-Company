@@ -8,7 +8,7 @@ const ShopNowCol = () => {
     <Wrapper>
       <div className=" w-full flexCenter mt-20  h-full gap-[8px] flex-col">
         <div className="   text-[#000000] up">
-          <p className=" font-SaolDisplay shopH">Online shop</p>
+          <p className=" font-SaolDisplay   italicA text-[40px]">Online shop</p>
         </div>
         <div className="flex  md:flex-row flex-col pt-10  flexCenter gap-3 md:p-5 p-1">
           {shop_now_image.map((item, index) => (

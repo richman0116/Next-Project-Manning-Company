@@ -10,11 +10,11 @@ const Hero = () => {
               <h1 className="font-Akzidenz freme8 leading-[15px] text-center">
                 You Deserve a Tailor-Made Suit
               </h1>
-              <p className="text-[28px] lg:text-[60px] md:text-[60px] leading-[25px]   md:leading-[55px] text-center">
+              <p className="text-[28px] lg:text-[60px] pt-1 md:text-[60px] leading-[25px]   md:leading-[55px] text-center">
                 <span className="font-SaolDisplayR fremeh8">Crafted</span>
                 <span className="font-SaolDisplay fremei8">With Care</span>
               </p>
-              <p className="Decades md:text-[34px] font-SaolDisplayR  text-center">
+              <p className="Decades md:text-[34.5px] font-SaolDisplayR  text-center">
                 Decades of data, a perfect fit – easily proven!
               </p>
               <Link
