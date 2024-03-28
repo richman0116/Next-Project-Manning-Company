@@ -6,7 +6,7 @@ import Wrapper from "../Shared/Wrapper";
 const ShopNowCol = () => {
   return (
     <Wrapper>
-      <div className=" w-full flexCenter mt-20  h-full gap-[8px] flex-col">
+      <div className=" w-full flexCenter pt-24  h-full gap-[8px] flex-col">
         <div className="   text-[#000000] up">
           <p className=" font-SaolDisplay   italicA text-[40px]">Online shop</p>
         </div>

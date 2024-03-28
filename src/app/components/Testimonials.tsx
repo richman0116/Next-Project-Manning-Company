@@ -24,7 +24,7 @@ export default function Testimonials() {
 
   return (
     <Wrapper>
-      <div className="  pb-10  mt-20">
+      <div className="   pt-24">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
           <div className="md:w-[450px] flex-col text-[#000000] up">
             <h1 className="flexCenter aboutA  uppercase font-Akzidenz">
@@ -115,7 +115,7 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
-        <div className=" relative pt-20 flexCenter">
+        <div className=" relative pt-8 pb-28 flexCenter">
           <BotomLinks text={"  See all"} />
         </div>
       </div>

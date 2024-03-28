@@ -5,12 +5,12 @@ import Wrapper from "../Shared/Wrapper";
 const About_Us = () => {
   return (
     <Wrapper>
-      <div className="  w-full flexCenter  mt-10 gap-[8px] flex-col">
+      <div className="  w-full flexCenter  pt-20 gap-[8px] flex-col">
         <div className="md:w-[581px]   flex-col text-[#000000] up">
           <h1 className="    flexCenter aboutA  font-Akzidenz uppercase">
             About us
           </h1>
-          <p className="ptext p-2 ">
+          <p className="ptext  ">
             <span className="font-SaolDisplay   italicA  ">Elevating </span>
             <span className="  font-SaolDisplayl  normal ">
               Style through Precision

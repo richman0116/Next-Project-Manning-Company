@@ -45,24 +45,25 @@ const Navbar = () => {
         style={{ backgroundColor: navbarBackground, color: navbarTextColor }}
         className="transition-all duration-300 ease-in w-full lg:max-w-[2000px] mx-auto fixed top-0 z-50"
       >
-        <div className="hidden h-[214px] lg:block md:block">
-          <div className="justify-between flex px-6 pr-6 ">
-            <div className="flex gap-3 ">
-              <Image src={searchIcon} alt="Search" width={24} height={24} />
-              <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
-            </div>
-            <div className="flex-col p-6 flex">
-              <h1 className="font-Akzidenzpc manning">Manning company</h1>
-              <div className="flexCenter flex-col">
-                <p className="font-Akzidenz manningsh">Bespoke tailors</p>
-                <p className="font-Akzidenz manningsh">Since 1979</p>
-              </div>
-            </div>
-            <div className="flex flex-row gap-3">
-              <Image src={profileIcon} alt="Profile" width={24} height={24} />
-              <Image src={bagIcon} alt="Bag" width={24} height={24} />
-            </div>
-          </div>
+       <div className="hidden h-[214px] lg:block md:block">
+  <div className="justify-between flex px-6 pr-6 align-center">
+    <div className="flex gap-3 align-center">
+      <Image src={searchIcon} alt="Search" width={24} height={24} />
+      <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
+    </div>
+    <div className="flex-col p-6 flex align-center">
+      <h1 className="font-Akzidenzpc manning">Manning company</h1>
+      <div className="flexCenter flex-col">
+        <p className="font-Akzidenz manningsh">Bespoke tailors</p>
+        <p className="font-Akzidenz manningsh">Since 1979</p>
+      </div>
+    </div>
+    <div className="flex flex-row gap-3 align-center">
+      <Image src={profileIcon} alt="Profile" width={24} height={24} />
+      <Image src={bagIcon} alt="Bag" width={24} height={24} />
+    </div>
+
+</div>
           <div className="flexCenter">
             <ul className="hidden h-full gap-[15px] lg:flex">
               {NAV_LINKS.slice(0, 6).map((link) => (

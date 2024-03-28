@@ -6,7 +6,7 @@ import Wrapper from "../Shared/Wrapper";
 const OurProcess = () => {
   return (
     <Wrapper>
-      <div className=" w-full flexCenter  h-full mt-20  flex-col">
+      <div className=" w-full flexCenter  h-full pt-20  flex-col">
         <div className="md:w-[400px]   flex-col text-[#000000] up">
           <h1 className="    flexCenter  aboutA  uppercase font-Akzidenz">
             Our process
@@ -19,10 +19,10 @@ const OurProcess = () => {
             <span className=" font-SaolDisplay  italicA ">Process</span>
           </p>
         </div>
-        <div className="w-full md:flex-row md:p-5 p-1 pt-10  md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
-          <div className=" md:flex-row flex-row md:gap-[13px]  gap-1 flex">
-            <div className="md:flex-row flex-col md:gap-[13px]  gap-1 flex">
-              <div className="relative">
+        <div className="w-full md:flex-row md:p-5 p-1   md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
+          <div className=" md:flex-row pt-10 flex-row md:gap-[13px]  gap-1 flex">
+            <div className="md:flex-row   flex-col md:gap-[13px]  gap-1 flex">
+              <div className="relative ">
                 <Image
                   alt={Frame[0].alt}
                   className="md:w-[252px] object-cover md:h-[339px]"
@@ -64,7 +64,7 @@ const OurProcess = () => {
               </div>
             </div>
           </div>
-          <div className="  relative ">
+          <div className="  relative pt-10 ">
             <Image
               alt={Frame[4].alt}
               className="md:w-[252px]  object-cover md:h-[339px]  w-[250px] sm:h-[100%] h-[100%]"
