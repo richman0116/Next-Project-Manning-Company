@@ -3,7 +3,9 @@ import React from "react";
 function TopHeading(props: any) {
   return (
     <div className="md:w-[520px]  flex-col text-[#000000] up">
-      <h1 className="flexCenter aboutA  font-Akzidenz">{props.title}</h1>
+      <h1 className="flexCenter aboutA  uppercase text-[10px] font-Akzidenz">
+        {props.title}
+      </h1>
       <p className="  ptext ">
         <span className="font-SaolDisplay  italicA ">
           {props.firstLine} {""}

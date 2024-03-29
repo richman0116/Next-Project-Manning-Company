@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../Shared/Wrapper";
-import Product from "./Product";
+import Product from "../components/Product";
 
 const BespokeShirts = () => {
   return (
@@ -36,7 +36,6 @@ const BespokeShirts = () => {
             tailored Shirt here.
           </p>
         </div>
-        <Product />
       </div>
     </Wrapper>
   );

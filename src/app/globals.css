@@ -27,7 +27,7 @@
   @apply text-xs uppercase text-[#FFFFFF] font-medium;
 }
 .proces {
-  @apply flexCenter font-SaolDisplay name   absolute inset-0  md:text-4xl pt-24  md:pt-52;
+  @apply flexCenter font-SaolDisplay name lg:text-[40px]   absolute inset-0  md:text-[40px] pt-24  md:pt-52;
 }
 .manning {
   text-align: center;
@@ -99,10 +99,9 @@
   text-transform: uppercase;
 }
 .aboutA {
-  color: var(--Black, #000);
-  font-size: 13x;
   font-style: normal;
   font-weight: 400;
+  line-height: 15px; /* 150% */
 }
 .about {
   color: var(--Black, #000);
