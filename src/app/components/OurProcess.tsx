@@ -3,18 +3,25 @@ import Image from "next/image";
 import BotomLinks from "@/app/Shared/BotomLinks";
 import { Frame } from "@/lib/constants";
 import Wrapper from "../Shared/Wrapper";
-import TopHeading from "../Shared/TopHeading";
 const OurProcess = () => {
   return (
     <Wrapper>
-      <div className=" w-full flexCenter  h-full pt-20  flex-col">
-        <TopHeading
-          title="Our process"
-          firstLine="THE"
-          secondLine="bespoke tailoring"
-          thirdLine="Process"
-        />
-        <div className="w-full md:flex-row md:p-5 p-1   md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
+      <div className=" w-full flexCenter  h-full pt-[100px]  flex-col">
+        <div className="md:w-[500px]   flex-col text-[#000000] up">
+          <h1 className="   flexCenter abouth  font-Akzidenz ">Our process</h1>
+          <p className="   text-center ">
+            <span className="font-SaolDisplay md:leading-[40px] text-[28px] md:text-[40px]  leading-[25px]  Elevating px-1">
+              THE{" "}
+            </span>
+            <span className=" font-SaolDisplayl md:leading-[40px] text-[28px] md:text-[40px]  leading-[25px]  style">
+              bespoke tailoring {""}
+            </span>
+            <span className=" font-SaolDisplay  Elevating md:leading-[40px] text-[28px] md:text-[40px]  leading-[25px] ">
+              Process
+            </span>
+          </p>
+        </div>
+        <div className="w-full md:flex-row md:p-5 pt[70px]   md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
           <div className=" md:flex-row pt-10 flex-row md:gap-[13px]  gap-1 flex">
             <div className="md:flex-row   flex-col md:gap-[13px]  gap-1 flex">
               <div className="relative ">
@@ -68,7 +75,7 @@ const OurProcess = () => {
             <p className=" flexCenter proces text-white ">{Frame[4].name}</p>
           </div>
         </div>
-        <div className=" pt-10">
+        <div className=" pt-[40px]">
           <BotomLinks text={"Book an Appointment"} />
         </div>
       </div>

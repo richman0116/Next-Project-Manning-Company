@@ -12,11 +12,11 @@
 }
 
 .footer {
-  @apply font-normal footer1 my-2 block  font-Akzidenz;
+  @apply text-white fotorlink my-2 block  font-Akzidenz;
 }
 
 .shopnow {
-  @apply font-SaolDisplay name   pt-52      absolute inset-0  text-4xl;
+  @apply font-SaolDisplay  imagereletivetext  pt-52      absolute inset-0  text-4xl;
 }
 
 .form {
@@ -27,120 +27,151 @@
   @apply text-xs uppercase text-[#FFFFFF] font-medium;
 }
 .proces {
-  @apply flexCenter font-SaolDisplay name lg:text-[40px]   absolute inset-0  md:text-[40px] pt-24  md:pt-52;
+  @apply flexCenter font-SaolDisplay  imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-24  md:pt-52;
 }
 .manning {
   text-align: center;
-  font-size: 35px;
+  font-size: 36.655px;
   font-style: normal;
-
-  text-transform: uppercase;
-}
-.manningsh {
-  font-size: 15.273px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22.909px; /* 150% */
+  font-weight: 700;
+  line-height: 38.182px;
   text-transform: uppercase;
 }
 
-.linksf {
+.navlink {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 116.667% */
 }
 
-.freme8 {
-  font-family: "Akzidenz-Grotesk Pro";
+.Deserve {
+  color: var(--White, #fff);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+
+  text-transform: uppercase;
+}
+
+.Crafted {
+  color: var(--White, #fff);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.WithCare {
+  color: var(--White, #fff);
+
+  font-style: italic;
+
+  line-height: 55px;
+}
+
+.Decades {
+  color: var(--White, #fff);
+
+  font-style: normal;
+  font-weight: 400;
+}
+.Booknow {
+  color: var(--White, #fff);
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 150% */
+}
+
+.abouth {
+  color: var(--Black, #000);
+
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 15px; /* 150% */
   text-transform: uppercase;
 }
+.Elevating {
+  color: var(--Black, #000);
+  text-align: center;
 
-.fremeh8 {
+  font-style: italic;
+  font-weight: 300;
+
+  text-transform: uppercase;
+}
+.style {
+  color: var(--Black, #000);
+
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 
   text-transform: uppercase;
 }
 
-.fremei8 {
-  font-style: italic;
+.aboutus {
+  color: var(--Black, #000);
+  text-align: center;
+  font-style: normal;
   font-weight: 300;
 }
 
-.Decades {
-  font-style: normal;
-  font-weight: 400;
-}
+.unserlinetext {
+  color: var(--Black, #000);
 
-.bottomL {
-  color: var(--White, #fff);
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 21px; /* 150% */
 }
 
-.italicA {
-  color: var(--Black, #000);
-  text-align: center;
-
-  text-transform: uppercase;
-}
-
-.normal {
-  color: var(--Black, #000);
-  font-style: normal;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.aboutA {
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15px; /* 150% */
-}
-.about {
-  color: var(--Black, #000);
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 30px; /* 125% */
-}
-
-.Apercu {
-  color: var(--Black, #000);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.name {
+.imagereletivetext {
   color: var(--White, #fff);
   text-align: center;
   font-style: italic;
   font-weight: 300;
-  line-height: 40px; /* 100% */
+  line-height: 40px;
+}
+.Reviews {
+  color: var(--Black, #000);
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.24px;
 }
 
-.shopH {
-  color: var(--Black, #000);
+.manningfooter {
+  color: var(--White, #fff);
   text-align: center;
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 40px; /* 100% */
+  font-size: 28.856px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.058px; /* 104.167% */
   text-transform: uppercase;
 }
-
-.footer1 {
+.manningshfootor {
   color: var(--White, #fff);
+  font-size: 12.023px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.035px; /* 150% */
+  text-transform: uppercase;
+}
+.headingfootoer {
+  color: var(--White, #fff);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 150% */
+  text-transform: uppercase;
+}
+.fotorlink {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 15px; /* 107.143% */
+  line-height: 21px;
 }

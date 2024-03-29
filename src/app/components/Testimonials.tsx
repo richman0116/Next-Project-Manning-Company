@@ -25,7 +25,7 @@ export default function Testimonials() {
 
   return (
     <Wrapper>
-      <div className="   pt-24">
+      <div className="   pt-[70px]">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
           <TopHeading
             title="Testimonials"
@@ -35,7 +35,7 @@ export default function Testimonials() {
           />
         </div>
 
-        <section className="overflow-hidden relative  pt-10 ">
+        <section className="overflow-hidden relative  pt-[127px]">
           <Swiper
             ref={swiperRef}
             navigation={{
@@ -58,7 +58,7 @@ export default function Testimonials() {
               },
             }}
           >
-            <div className="flex  w-60">
+            <div className="flex  w-60 ">
               {testimonials.map((item, index) => (
                 <SwiperSlide
                   key={index}
@@ -72,7 +72,7 @@ export default function Testimonials() {
                       width={67}
                       height={46}
                     />
-                    <blockquote className="font-Akzidenzlc about">
+                    <blockquote className="font-Akzidenzlc Reviews">
                       {item.text}
                     </blockquote>
                     <p className="Apercu px-3 pb-6 font-Apercu pt-20">
@@ -108,7 +108,7 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
-        <div className=" relative pt-8 pb-28 flexCenter">
+        <div className=" relative pt-8 pb-[76px] flexCenter">
           <BotomLinks text={"  See all"} />
         </div>
       </div>

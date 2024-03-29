@@ -13,8 +13,8 @@ const About_Us = () => {
           secondLine="Style through Precision"
           thirdLine="Tailoring"
         />
-        <div className="md:p-10 lg:p-10 p-4 md:w-[1350px] lg:w-[1350px]   text-center">
-          <p className="  font-Akzidenzlc about md:leading-[38px]  leading-[18px]">
+        <div className=" pt-[70px] md:p-10 p-8 md:w-[1350px] lg:w-[1350px]   text-center">
+          <p className=" md:leading-[30px] text-[16px] md:text-[24px]  leading-[18px]  font-Akzidenzlc aboutus">
             At Manning Company, our commitment is simple yet profound: to
             deliver bespoke tailored garments that embody the epitome of
             individual panache and personality. Renowned for producing only the
@@ -25,7 +25,9 @@ const About_Us = () => {
           </p>
         </div>
 
-        <BotomLinks text={"Book an Appointment"} />
+        <div className=" pt-[40]">
+          <BotomLinks text={"Book an Appointment"} />
+        </div>
       </div>
     </Wrapper>
   );

@@ -9,7 +9,7 @@ const BotomLinks = ({ text }: Props) => {
     <div>
       <Link
         href={""}
-        className="aboutA font-Akzidenz pb-0.5 text-[14px] border-b border-black"
+        className=" border-b-2 border-black pb-0.5 font-Akzidenz unserlinetext"
       >
         {text}
       </Link>

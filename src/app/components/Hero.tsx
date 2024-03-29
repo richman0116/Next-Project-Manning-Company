@@ -7,19 +7,23 @@ const Hero = () => {
         <div className="flex flex-col  w-full h-[447px] md:h-[880px] bg-hero bg-cover  bg-center  ">
           <div className="absolute w-full h-[447px] md:h-[880px] bg-[#00000066] bg-opacity-80">
             <div className="md:px-16 md:pt-72 text-white pt-52  bg-opacity-40  flex flex-col md:items-start items-center  sm:px-4">
-              <h1 className="font-Akzidenz freme8 leading-[15px] text-center">
+              <h1 className="font-Akzidenz  md:leading-[15px]  leading-[7.5px]  Deserve">
                 You Deserve a Tailor-Made Suit
               </h1>
-              <p className="text-[28px] lg:text-[60px] pt-1 md:text-[60px] leading-[25px]   md:leading-[55px] text-center">
-                <span className="font-SaolDisplayR fremeh8">Crafted</span>
-                <span className="font-SaolDisplay fremei8">With Care</span>
+              <p className=" text-center ">
+                <span className="font-SaolDisplayR md:leading-[55px] text-[28px] md:text-[60px]  leading-[ 25px] Crafted">
+                  Crafted
+                </span>
+                <span className="font-SaolDisplay md:leading-[55px] text-[28px] md:text-[60px]  leading-[ 25px] WithCare">
+                  With Care
+                </span>
               </p>
-              <p className="Decades md:text-[34.5px] font-SaolDisplayR  text-center">
+              <p className="Decades leading-[16.421px] md:leading-[35px] text-[16px] md:text-[36px] font-SaolDisplayR  text-center">
                 Decades of data, a perfect fit – easily proven!
               </p>
               <Link
                 href="/"
-                className="relative border-b pt-5 border-current bottomL text-center"
+                className="relative Booknow border-b-2 pt-[17px]  font-Akzidenz"
               >
                 Book now
               </Link>

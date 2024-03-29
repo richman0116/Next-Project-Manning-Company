@@ -14,7 +14,7 @@ import TopHeading from "../Shared/TopHeading";
 const OurBrands = () => {
   return (
     <Wrapper>
-      <section className="overflow-hidden pt-24 hidden md:block lg:block">
+      <section className="overflow-hidden pt-[103px] hidden md:block lg:block">
         <div className="overflow-hidden w-full flexCenter  gap-[8px] flex-col">
           <TopHeading
             title="OUR brands"
@@ -37,7 +37,7 @@ const OurBrands = () => {
         >
           {brands.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col pt-12 items-center">
+              <div className="flex flex-col pt-[70px] items-center">
                 <div className="rounded-full overflow-hidden">
                   <Image
                     src={item.src}
@@ -55,7 +55,7 @@ const OurBrands = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="relative pt-8 flexCenter">
+        <div className="relative  pb-2 pt-[40px] flexCenter">
           <BotomLinks text={" Discover now"} />
         </div>
       </section>
