@@ -3,22 +3,17 @@ import Image from "next/image";
 import BotomLinks from "@/app/Shared/BotomLinks";
 import { Frame } from "@/lib/constants";
 import Wrapper from "../Shared/Wrapper";
+import TopHeading from "../Shared/TopHeading";
 const OurProcess = () => {
   return (
     <Wrapper>
       <div className=" w-full flexCenter  h-full pt-20  flex-col">
-        <div className="md:w-[400px]   flex-col text-[#000000] up">
-          <h1 className="    flexCenter  aboutA  uppercase font-Akzidenz">
-            Our process
-          </h1>
-          <p className="ptext   ">
-            <span className="font-SaolDisplay  italicA pr-1">THE </span>
-            <span className=" font-SaolDisplayl  normal">
-              bespoke tailoring {""}
-            </span>
-            <span className=" font-SaolDisplay  italicA ">Process</span>
-          </p>
-        </div>
+        <TopHeading
+          title="Our process"
+          firstLine="THE"
+          secondLine="bespoke tailoring"
+          thirdLine="Process"
+        />
         <div className="w-full md:flex-row md:p-5 p-1   md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
           <div className=" md:flex-row pt-10 flex-row md:gap-[13px]  gap-1 flex">
             <div className="md:flex-row   flex-col md:gap-[13px]  gap-1 flex">

@@ -52,7 +52,6 @@
 }
 
 .freme8 {
-  color: var(--White, #fff);
   font-family: "Akzidenz-Grotesk Pro";
   font-size: 10px;
   font-style: normal;
@@ -62,21 +61,18 @@
 }
 
 .fremeh8 {
-  color: var(--White, #fff);
   font-style: normal;
   font-weight: 400;
-  /* 91.667% */
+
   text-transform: uppercase;
 }
 
 .fremei8 {
-  color: var(--White, #fff);
   font-style: italic;
   font-weight: 300;
 }
 
 .Decades {
-  color: var(--White, #fff);
   font-style: normal;
   font-weight: 400;
 }

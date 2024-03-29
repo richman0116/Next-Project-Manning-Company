@@ -8,6 +8,7 @@ import quotes from "../../../public/assets/quotes.svg";
 import { testimonials } from "@/lib/constants";
 import BotomLinks from "@/app/Shared/BotomLinks";
 import Wrapper from "../Shared/Wrapper";
+import TopHeading from "../Shared/TopHeading";
 
 export default function Testimonials() {
   const swiperRef = useRef<any | null>(null);
@@ -26,20 +27,12 @@ export default function Testimonials() {
     <Wrapper>
       <div className="   pt-24">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
-          <div className="md:w-[450px] flex-col text-[#000000] up">
-            <h1 className="flexCenter aboutA  uppercase font-Akzidenz">
-              Testimonials
-            </h1>
-            <p className="  ptext ">
-              <span className="font-SaolDisplay  italicA p-1">
-                Rave Reviews{" "}
-              </span>
-              <span className="font-SaolDisplayl  normal">
-                from Our Satisfied
-              </span>
-              <span className="font-SaolDisplay  italicA px-1">Clients</span>
-            </p>
-          </div>
+          <TopHeading
+            title="Testimonials"
+            firstLine="Rave Reviews"
+            secondLine="from Our Satisfied"
+            thirdLine="Clients"
+          />
         </div>
 
         <section className="overflow-hidden relative  pt-10 ">

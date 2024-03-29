@@ -9,24 +9,19 @@ import arrow from "../../../public/assets/send.svg";
 import { brands } from "@/lib/constants";
 import BotomLinks from "@/app/Shared/BotomLinks";
 import Wrapper from "../Shared/Wrapper";
+import TopHeading from "../Shared/TopHeading";
 
 const OurBrands = () => {
   return (
     <Wrapper>
       <section className="overflow-hidden pt-24 hidden md:block lg:block">
         <div className="overflow-hidden w-full flexCenter  gap-[8px] flex-col">
-          <div className="md:w-[350px] flex-col text-[#f1f0f0] up">
-            <h1 className="flexCenter aboutA uppercase font-Akzidenz">
-              OUR brands
-            </h1>
-            <p className="ptext">
-              <span className="font-SaolDisplay italicA pr-1">Discover </span>
-              <span className="font-SaolDisplayl normal">
-                our Signature {""}
-              </span>
-              <span className="font-SaolDisplay italicA">Labels</span>
-            </p>
-          </div>
+          <TopHeading
+            title="OUR brands"
+            firstLine="Discover "
+            secondLine="our Signature"
+            thirdLine="Labels"
+          />
         </div>
         <Swiper
           slidesPerView={5}

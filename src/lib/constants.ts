@@ -24,7 +24,7 @@ export const DEFAULT_OPTION = "Default Title";
 export const SHOPIFY_GRAPHQL_API_ENDPOINT = "/api/2023-01/graphql.json";
 
 export const NAV_LINKS = [
-  { href: "/", key: "Bespoke Shirts", label: "Bespoke Shirts" },
+  { href: "/bespoke-Shirts", key: "Bespoke Shirts", label: "Bespoke Shirts" },
   { href: "/", key: "Bespoke Suits", label: "Bespoke Suits" },
   { href: "/", key: "Shop now", label: "Shop now" },
   { href: "/", key: "Trunk Show ", label: "Trunk Show " },

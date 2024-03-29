@@ -1,23 +1,18 @@
 import BotomLinks from "@/app/Shared/BotomLinks";
 import React from "react";
 import Wrapper from "../Shared/Wrapper";
+import TopHeading from "../Shared/TopHeading";
 
 const About_Us = () => {
   return (
     <Wrapper>
       <div className="  w-full flexCenter  pt-20 gap-[8px] flex-col">
-        <div className="md:w-[581px]   flex-col text-[#000000] up">
-          <h1 className="    flexCenter aboutA  font-Akzidenz uppercase">
-            About us
-          </h1>
-          <p className="ptext  ">
-            <span className="font-SaolDisplay   italicA  ">Elevating </span>
-            <span className="  font-SaolDisplayl  normal ">
-              Style through Precision
-            </span>
-            <span className=" font-SaolDisplay italicA  ">Tailoring</span>
-          </p>
-        </div>
+        <TopHeading
+          title="About us"
+          firstLine="Elevating "
+          secondLine="Style through Precision"
+          thirdLine="Tailoring"
+        />
         <div className="md:p-10 lg:p-10 p-4 md:w-[1350px] lg:w-[1350px]   text-center">
           <p className="  font-Akzidenzlc about md:leading-[38px]  leading-[18px]">
             At Manning Company, our commitment is simple yet profound: to
