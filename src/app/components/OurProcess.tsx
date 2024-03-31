@@ -21,7 +21,7 @@ const OurProcess = () => {
             </span>
           </p>
         </div>
-        <div className="w-full md:flex-row md:p-5 pt[70px]   md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
+        <div className="w-full md:flex-row md:px-16   mt-3  md:gap-[13px] justify-center   gap-1 flex lg:flex-row">
           <div className=" md:flex-row pt-10 flex-row md:gap-[13px]  gap-1 flex">
             <div className="md:flex-row   flex-col md:gap-[13px]  gap-1 flex">
               <div className="relative ">
@@ -75,7 +75,7 @@ const OurProcess = () => {
             <p className=" flexCenter proces text-white ">{Frame[4].name}</p>
           </div>
         </div>
-        <div className=" pt-[40px]">
+        <div className=" pt-8 ">
           <BotomLinks text={"Book an Appointment"} />
         </div>
       </div>

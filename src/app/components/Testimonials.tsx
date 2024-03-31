@@ -25,7 +25,7 @@ export default function Testimonials() {
 
   return (
     <Wrapper>
-      <div className="   pt-[70px]">
+      <div className="   pt-[65px]">
         <div className="overflow-hidden flexCenter h-full gap-[8px] flex-col">
           <TopHeading
             title="Testimonials"
@@ -35,7 +35,7 @@ export default function Testimonials() {
           />
         </div>
 
-        <section className="overflow-hidden relative  pt-[127px]">
+        <section className="overflow-hidden relative  pt-[105px]">
           <Swiper
             ref={swiperRef}
             navigation={{
@@ -58,7 +58,7 @@ export default function Testimonials() {
               },
             }}
           >
-            <div className="flex  w-60 ">
+            <div className="flex  w-[336px] h-[383px] ">
               {testimonials.map((item, index) => (
                 <SwiperSlide
                   key={index}
@@ -108,7 +108,7 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
-        <div className=" relative pt-8 pb-[76px] flexCenter">
+        <div className=" relative pt-6  pb-36 flexCenter">
           <BotomLinks text={"  See all"} />
         </div>
       </div>

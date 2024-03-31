@@ -16,7 +16,7 @@ const Collection = ({ collections }: any) => {
             Online shop
           </p>
         </div>
-        <div className="  grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-[70px] gap-2 p-1">
+        <div className=" md:px-16   grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  pt-[70px] gap-2 p-1">
           {collections.map((collection: any) => (
             <Link key={collection.handle} href={collection.path}>
               <div className="relative  mb-8 rounded overflow-hidden">
@@ -40,7 +40,7 @@ const Collection = ({ collections }: any) => {
             </Link>
           ))}
         </div>
-        <div className=" pt-[20px] ">
+        <div className="  ">
           <BotomLinks text={"Shop all"} />
         </div>
       </div>

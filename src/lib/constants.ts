@@ -33,6 +33,60 @@ export const NAV_LINKS = [
   { href: "/", key: "Sign In", label: "Sign In" },
 ];
 
+export const Onlineshop = [
+  { href: "/bespoke-Shirts", key: "Bespoke Shirts", label: "Bespoke Shirts" },
+  { href: "/", key: "Ties", label: "Ties" },
+  { href: "/", key: "Bow Ties", label: "Bow Ties" },
+  { href: "/", key: "Pocket Squares", label: "Pocket Squares" },
+  { href: "/", key: "Cufflinks ", label: "Cufflinks" },
+  { href: "/", key: "Braces / Suspenders", label: "Braces / Suspenders" },
+  { href: "/", key: "Tuxedos Studs", label: "Tuxedos Studs" },
+  { href: "/", key: "Collar Stays", label: "Collar Stays" },
+  { href: "/", key: "Collar Bars", label: "Collar Bars" },
+  { href: "/", key: "Socks", label: "Socks" },
+];
+export const HELP = [
+  {
+    href: "/bespoke-Shirts",
+    key: "Privacy and Cookies Policy",
+    label: "Privacy and Cookies Policy",
+  },
+  { href: "/", key: "Terms and Conditions", label: "Terms and Conditions" },
+  { href: "/", key: "Shipping and Returns", label: "Shipping and Returns" },
+  { href: "/", key: "FAQs", label: "FAQs" },
+  { href: "/", key: "Payment Options ", label: "Payment Options" },
+  { href: "/", key: "Braces / Suspenders", label: "Braces / Suspenders" },
+];
+export const ABOUT_US = [
+  {
+    href: "About Manning",
+    key: "About Manning",
+    label: "About Manning",
+  },
+  { href: "/", key: "Careers", label: "Careers" },
+  { href: "/", key: "Blog", label: "Blog" },
+  { href: "/", key: "Google", label: "Google" },
+  { href: "/", key: "Facebook ", label: "Facebook" },
+  { href: "/", key: "Instagram", label: "Instagram" },
+  { href: "/", key: "Twitter", label: "Twitter" },
+];
+export const TAILORING = [
+  {
+    href: "Hong Kong Alternations",
+    key: "Hong Kong Alternations",
+    label: "Hong Kong Alternations",
+  },
+  { href: "/", key: "Custom Tailoring", label: "Custom Tailoring" },
+  { href: "/", key: "Trunk Shows", label: "Trunk Shows" },
+  { href: "/", key: "Make an Appointment", label: "Make an Appointment" },
+  { href: "/", key: "Gift Voucher ", label: "Gift Voucher" },
+  { href: "/", key: "Reviews", label: "Reviews" },
+  { href: "/", key: "Ladies Tailoring", label: "Ladies Tailoring" },
+  { href: "/", key: "Wedding Wear", label: "Wedding Wear" },
+  { href: "/", key: "Affiliation", label: "Affiliation" },
+  { href: "/", key: "Referral Program", label: "Referral Program" },
+  { href: "/", key: "Custom Suit Hong Kong", label: "Custom Suit Hong Kong" },
+];
 // CAMP SECTION
 export const Frame = [
   {

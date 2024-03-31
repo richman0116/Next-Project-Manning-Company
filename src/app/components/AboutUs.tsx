@@ -6,14 +6,14 @@ import TopHeading from "../Shared/TopHeading";
 const About_Us = () => {
   return (
     <Wrapper>
-      <div className="  w-full flexCenter  pt-20 gap-[8px] flex-col">
+      <div className="  w-full flexCenter  pt-24 gap-[8px] flex-col">
         <TopHeading
           title="About us"
           firstLine="Elevating "
           secondLine="Style through Precision"
           thirdLine="Tailoring"
         />
-        <div className=" pt-[70px] md:p-10 p-8 md:w-[1350px] lg:w-[1350px]   text-center">
+        <div className="  md:pt-14 md:p-9 p-8 md:w-[1350px] lg:w-[1350px]   text-center">
           <p className=" md:leading-[30px] text-[16px] md:text-[24px]  leading-[18px]  font-Akzidenzlc aboutus">
             At Manning Company, our commitment is simple yet profound: to
             deliver bespoke tailored garments that embody the epitome of
@@ -25,7 +25,7 @@ const About_Us = () => {
           </p>
         </div>
 
-        <div className=" pt-[40]">
+        <div className=" ">
           <BotomLinks text={"Book an Appointment"} />
         </div>
       </div>

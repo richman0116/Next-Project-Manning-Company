@@ -12,7 +12,7 @@ const ShopNowCol = () => {
             Online Now
           </p>
         </div>
-        <div className="flex  md:flex-row flex-col pt-10  flexCenter gap-3 md:p-5 p-1">
+        <div className="flex  md:flex-row flex-col md:px-16 pt-16   flexCenter gap-3  p-1">
           {shop_now_image.map((item, index) => (
             <div key={index} className="relative mb-8 rounded overflow-hidden">
               <Image
@@ -24,7 +24,7 @@ const ShopNowCol = () => {
             </div>
           ))}
         </div>
-        <div className=" pt-[20px] ">
+        <div className=" ">
           <BotomLinks text={"Book an Appointment"} />
         </div>
       </div>

@@ -7,18 +7,18 @@ const Hero = () => {
         <div className="flex flex-col  w-full h-[447px] md:h-[880px] bg-hero bg-cover  bg-center  ">
           <div className="absolute w-full h-[447px] md:h-[880px] bg-[#00000066] bg-opacity-80">
             <div className="md:px-16 md:pt-72 text-white pt-52  bg-opacity-40  flex flex-col md:items-start items-center  sm:px-4">
-              <h1 className="font-Akzidenz  md:leading-[15px]  leading-[7.5px]  Deserve">
+              <h1 className="font-Akzidenz  md:leading-[15px]  leading-[1.5px]  Deserve">
                 You Deserve a Tailor-Made Suit
               </h1>
               <p className=" text-center ">
-                <span className="font-SaolDisplayR md:leading-[55px] text-[28px] md:text-[60px]  leading-[ 25px] Crafted">
+                <span className="font-SaolDisplayR md:leading-[55px] text-[28px] md:text-[60px]  leading-[3px] Crafted">
                   Crafted
                 </span>
-                <span className="font-SaolDisplay md:leading-[55px] text-[28px] md:text-[60px]  leading-[ 25px] WithCare">
+                <span className="font-SaolDisplay md:leading-[55px] text-[28px] md:text-[60px]  leading-[3px] WithCare">
                   With Care
                 </span>
               </p>
-              <p className="Decades leading-[16.421px] md:leading-[35px] text-[16px] md:text-[36px] font-SaolDisplayR  text-center">
+              <p className="Decades leading-[1.421px] md:leading-[35px] text-[16px] md:text-[36px] font-SaolDisplayR  text-center">
                 Decades of data, a perfect fit – easily proven!
               </p>
               <Link

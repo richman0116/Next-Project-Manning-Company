@@ -49,18 +49,18 @@ const Navbar = () => {
       >
         <div className="hidden h-[214px] lg:block md:block">
           <div className="  justify-between  flex ">
-            <div className="flex gap-3 px-[63px] ">
+            <div className="flex gap-3 px-[60px] ">
               <Image src={searchIcon} alt="Search" width={24} height={24} />
               <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
             </div>
-            <div className="flex-col  flex  mt-10 ">
+            <div className="flex-col  flex pt-7 ">
               <h1 className="font-Akzidenzpc   manning">Manning company</h1>
               <div className="flexCenter flex-col">
                 <p className="font-Akzidenz manningsh">Bespoke tailors</p>
                 <p className="font-Akzidenz manningsh">Since 1979</p>
               </div>
             </div>
-            <div className=" flex flex-row gap-3  pr-[63px]">
+            <div className=" flex flex-row gap-3  px-[60px]">
               <Image src={profileIcon} alt="Profile" width={24} height={24} />
               <Image src={bagIcon} alt="Bag" width={24} height={24} />
             </div>
@@ -80,7 +80,7 @@ const Navbar = () => {
         </div>
         {/* Mobile menu */}
 
-        <div className="lg:hidden md:hidden fixed top-0  w-full  bg-[#F5F2ED] z-10 flex justify-between p-2">
+        <div className="lg:hidden md:hidden fixed top-0  w-full  bg-[#F5F2ED] z-10 flex justify-between p-3">
           <div className="   text-[#000000]  ">
             <h1 className="    font-Akzidenzpc uppercase text-[14.44px] ">
               Manning company
