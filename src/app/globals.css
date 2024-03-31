@@ -175,3 +175,12 @@
   font-weight: 400;
   line-height: 21px;
 }
+
+.Copyright {
+  color: #75808a;
+  font-family: "Akzidenz-Grotesk Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 107.143% */
+}

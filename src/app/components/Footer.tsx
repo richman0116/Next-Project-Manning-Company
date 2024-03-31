@@ -131,6 +131,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="w-full Copyright p-4 text-center">
+          © 2024 Copyright by Manning Company{" "}
+        </div>
       </div>
     </Wrapper>
   );
