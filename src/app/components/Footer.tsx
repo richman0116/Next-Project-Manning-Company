@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           {/* Newsletter */}
           <div className=" ">
-            <div className=" p-4 w-full md:w-[360px] ">
+            <div className=" p-2 w-full md:w-[370px] ">
               <h1 className="headingfootoer  md:justify-start flexCenter font-Akzidenz">
                 newsletter
               </h1>
@@ -73,21 +73,21 @@ const Footer = () => {
                 We will keep you posted with promotions, trunk shows & new
                 offers
               </p>
-              <div className="flex flex-col p-4 justify-center ">
-                <div className="text-white md:w-[280.07px] flex flex-col">
+              <div className="flex flex-col justify-center ">
+                <div className="text-white p-6 md:p-0 md:w-[280.07px] flex flex-col">
                   <input
                     type="text"
-                    className="form  mb-2"
+                    className="formf mb-[18px]     "
                     placeholder="Full Name"
                   />
                   <input
                     type="email"
-                    className="form   mb-2"
+                    className="formf   mb-[18px]"
                     placeholder="Email"
                   />
                   <input
                     type="Country"
-                    className="form  mb-2"
+                    className="formf mb-[18px]"
                     placeholder="Country"
                   />
 
@@ -96,7 +96,7 @@ const Footer = () => {
                   </button>
                 </div>
 
-                <div className="flex  flexCenter pt-4">
+                <div className="flex  flexCenter pt-4  md:pr-6">
                   <label className=" footer font-Akzidenz">
                     I have read and agreed with the{" "}
                     <Link href={""} className="relative">

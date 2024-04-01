@@ -66,7 +66,7 @@ const OurProcess = () => {
               className="md:w-[252px]  object-cover md:h-[339px]  w-[250px] sm:h-[100%] h-[100%]"
               src={Frame[4].src}
             />
-            <p className=" flexCenter font-SaolDisplay md:leading-[40px]  text-[21px]  leading-[21.939px]  pb-[34px] text-white   imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-[24]  md:pt-64 ">
+            <p className=" flexCenter font-SaolDisplay md:leading-[40px]  text-[21px]  leading-[21.939px]  pb-[34px] text-white   imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-[24]  md:pt-[268px] ">
               {Frame[4].name}
             </p>
           </div>
