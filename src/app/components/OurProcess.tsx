@@ -30,9 +30,7 @@ const OurProcess = () => {
                   className="md:w-[252px] object-cover md:h-[339px]"
                   src={Frame[0].src}
                 />
-                <p className="flexCenter   proces text-white ">
-                  {Frame[0].name}
-                </p>
+                <p className="   proces1  ">{Frame[0].name}</p>
               </div>
               <div className="  relative">
                 <Image
@@ -40,7 +38,7 @@ const OurProcess = () => {
                   className="md:w-[252px] object-cover  md:h-[339px] "
                   src={Frame[1].src}
                 />
-                <p className="flexCenter proces text-white ">{Frame[1].name}</p>
+                <p className=" proces1  ">{Frame[1].name}</p>
               </div>
             </div>
             <div className="md:flex-row flex-col gap-1 md:gap-[13px]  flex">
@@ -50,19 +48,15 @@ const OurProcess = () => {
                   className="md:w-[252px] object-cover md:h-[339px] "
                   src={Frame[2].src}
                 />
-                <p className="flexCenter proces text-white  ">
-                  {Frame[2].name}
-                </p>
+                <p className=" proces1   ">{Frame[2].name}</p>
               </div>
-              <div className="  relative">
+              <div className="  relative ">
                 <Image
                   alt={Frame[3].alt}
                   className="md:w-[252px] object-cover md:h-[339px] "
                   src={Frame[3].src}
                 />
-                <p className="flexCenter proces px-3 text-white ">
-                  {Frame[3].name}
-                </p>
+                <p className=" proces    ">{Frame[3].name}</p>
               </div>
             </div>
           </div>
@@ -72,7 +66,9 @@ const OurProcess = () => {
               className="md:w-[252px]  object-cover md:h-[339px]  w-[250px] sm:h-[100%] h-[100%]"
               src={Frame[4].src}
             />
-            <p className=" flexCenter proces text-white ">{Frame[4].name}</p>
+            <p className=" flexCenter font-SaolDisplay pb-[34px] text-white   imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-[24]  md:pt-64 ">
+              {Frame[4].name}
+            </p>
           </div>
         </div>
         <div className=" pt-8 ">

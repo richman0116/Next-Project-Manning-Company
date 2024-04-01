@@ -9,7 +9,7 @@ const ShopNowCol = () => {
       <div className=" w-full flexCenter pt-24  h-full gap-[8px] flex-col">
         <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
           <p className=" font-SaolDisplay  Elevating md:leading-[40px] text-[28px] md:text-[40px]  leading-[25px] ">
-            Online Now
+            Shop Now
           </p>
         </div>
         <div className="flex  md:flex-row flex-col md:px-16 pt-16   flexCenter gap-3  p-1">

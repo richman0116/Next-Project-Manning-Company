@@ -16,7 +16,7 @@
 }
 
 .shopnow {
-  @apply font-SaolDisplay  imagereletivetext  pt-52      absolute inset-0  text-4xl;
+  @apply font-SaolDisplay  imagereletivetext  pt-[264px] pb-[35px]      absolute inset-0  text-4xl;
 }
 
 .form {
@@ -27,7 +27,10 @@
   @apply text-xs uppercase text-[#FFFFFF] font-medium;
 }
 .proces {
-  @apply flexCenter font-SaolDisplay  imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-24  md:pt-52;
+  @apply flexCenter font-SaolDisplay pb-[34px] text-white   imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-[24]  md:pt-56;
+}
+.proces1 {
+  @apply flexCenter font-SaolDisplay  text-white   imagereletivetext lg:text-[40px]   absolute inset-0  md:text-[40px] pt-[24]  md:pt-56;
 }
 .manning {
   text-align: center;
@@ -132,7 +135,7 @@
   text-align: center;
   font-style: italic;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 40px;
 }
 .Reviews {
   color: var(--Black, #000);

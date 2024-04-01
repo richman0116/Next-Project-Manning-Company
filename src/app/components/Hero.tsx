@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
               <Link
                 href="/"
-                className="relative Booknow border-b-2 pt-[17px]  font-Akzidenz"
+                className="relative Booknow border-b-[1px] pt-[17px]  font-Akzidenz"
               >
                 Book now
               </Link>

@@ -72,27 +72,28 @@ const Footer = () => {
                 offers
               </p>
               <div className="flex flex-col pt-4 justify-center ">
-                <div className="text-white flex flex-col">
+                <div className="text-white md:w-[280.07px] flex flex-col">
                   <input
                     type="text"
-                    className="form border border-white rounded-md mb-2"
+                    className="form  mb-2"
                     placeholder="Full Name"
                   />
                   <input
                     type="email"
-                    className="form  border border-white rounded-md mb-2"
+                    className="form   mb-2"
                     placeholder="Email"
                   />
                   <input
                     type="Country"
-                    className="form border border-white rounded-md mb-2"
+                    className="form  mb-2"
                     placeholder="Country"
                   />
+
+                  <button className="flexCenter  footer font-Akzidenz">
+                    Subscribe
+                  </button>
                 </div>
 
-                <button className="flexCenter  footer font-Akzidenz">
-                  Subscribe
-                </button>
                 <div className="flex  flexCenter pt-4">
                   <label className=" footer font-Akzidenz">
                     I have read and agreed with the{" "}
@@ -105,18 +106,18 @@ const Footer = () => {
               </div>
             </div>
             {/* Contact information */}
-            <div className="flex lg:flex-row p-4 w-full flex-col md:flex-row text-white pt-4 gap-4">
+            <div className="flex lg:flex-row  p-4 w-full flex-col md:flex-row text-white pt-4  gap-[46px]  ">
               <div className="flex flex-col footer font-Akzidenz ">
-                <div className="flex items-center">
+                <div className="flex items-center gap-[10px]">
                   <Image src={callIcon} alt="Call Icon" />
                   <p className=" footer font-Akzidenz">+852 2111 1955</p>
                 </div>
-                <div className="flex items-center ">
+                <div className="flex items-center gap-[10px]">
                   <Image src={whatsappIcon} alt="WhatsApp Icon" />
                   <p className="font-Akzidenz footer">+852 5169 7732</p>
                 </div>
               </div>
-              <div className="flex  gap-[10px]  ">
+              <div className="flex   gap-[10px]  ">
                 <div className=" pt-3">
                   <Image src={locationIcon} alt="Location Icon" />
                 </div>
