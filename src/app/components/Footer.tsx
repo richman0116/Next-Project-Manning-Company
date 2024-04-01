@@ -101,14 +101,14 @@ const Footer = () => {
                     I have read and agreed with the{" "}
                     <Link href={""} className="relative">
                       Privacy Policy
-                      <div className="absolute left-0 right-0 top-2.5  footer  bottom-0 h-0.5 bg-white"></div>
+                      <div className="absolute left-0 right-0 top-2.5  footer  bottom-0 h-[1px] bg-white"></div>
                     </Link>
                   </label>
                 </div>
               </div>
             </div>
             {/* Contact information */}
-            <div className="flex lg:flex-row  p-4 w-full flex-col md:flex-row text-white pt-4  gap-[46px]  ">
+            <div className="flex lg:flex-row  w-full flex-col md:flex-row text-white  gap-[46px]  ">
               <div className="flex flex-col footer font-Akzidenz ">
                 <div className="flex items-center gap-[10px]">
                   <Image src={callIcon} alt="Call Icon" />

@@ -62,7 +62,7 @@ export default function Testimonials() {
               {testimonials.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="container bg-[#F5F2ED] hover:bg-[#F5F2ED] mx-2 p-4"
+                  className="container shadow-md hover:pt-9 hover:bg-[#F5F2ED] p-4 m-4"
                 >
                   <div className="flex flex-col">
                     <Image
