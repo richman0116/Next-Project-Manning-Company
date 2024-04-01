@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="flex-col pt-12  flex   ">
           <h1 className="font-Akzidenzpc   manningfooter">Manning company</h1>
           <div className="flexCenter flex-col">
-            <p className="font-Akzidenz manningshfootor">Bespoke tailors</p>
-            <p className="font-Akzidenz manningshfootor">Since 1979</p>
+            <p className="font-Akzidenz Bespoke text-white">Bespoke tailors</p>
+            <p className="font-Akzidenz Since text-white">Since 1979</p>
           </div>
         </div>
         <div className=" w-full  pt-10 justify-center  flex md:flex-row lg:flex-row gap-[80px]   flex-col-reverse  ">

@@ -56,8 +56,8 @@ const Navbar = () => {
             <div className="flex-col  flex pt-7 ">
               <h1 className="font-Akzidenzpc   manning">Manning company</h1>
               <div className="flexCenter flex-col">
-                <p className="font-Akzidenz manningsh">Bespoke tailors</p>
-                <p className="font-Akzidenz manningsh">Since 1979</p>
+                <p className="font-Akzidenz Bespoke">Bespoke tailors</p>
+                <p className="font-Akzidenz  Since">Since 1979</p>
               </div>
             </div>
             <div className=" flex flex-row gap-3  px-[60px]">

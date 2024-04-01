@@ -37,7 +37,7 @@
   font-size: 36.655px;
   font-style: normal;
   font-weight: 700;
-  line-height: 38.182px;
+  line-height: 38.182px; /* 104.167% */
   text-transform: uppercase;
 }
 
@@ -146,22 +146,21 @@
   letter-spacing: 0.24px;
 }
 
-.manningfooter {
-  color: var(--White, #fff);
-  text-align: center;
-  font-size: 28.856px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30.058px; /* 104.167% */
-  text-transform: uppercase;
-}
-.manningshfootor {
-  color: var(--White, #fff);
-  font-size: 12.023px;
+.Bespoke {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-size: 15.273px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18.035px; /* 150% */
+  line-height: 22.909px; /* 150% */
   text-transform: uppercase;
+}
+
+.Since {
+  font-family: "Akzidenz-Grotesk Pro";
+  font-size: 15.273px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.909px; /* 150% */
 }
 .headingfootoer {
   color: var(--White, #fff);
