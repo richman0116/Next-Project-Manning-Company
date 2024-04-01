@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <div className=" w-full  pt-10 justify-center  flex md:flex-row lg:flex-row gap-[80px]   flex-col-reverse  ">
-          <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-[40px] ">
+          <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-[40px] p-4 ">
             <div className=" ">
               <div className="headingfootoer font-Akzidenz">Online shop</div>
               <div>
@@ -65,13 +65,15 @@ const Footer = () => {
           </div>
           {/* Newsletter */}
           <div className=" ">
-            <div className="  w-full md:w-[360px] ">
-              <h1 className="headingfootoer  font-Akzidenz">newsletter</h1>
-              <p className="footer  ">
+            <div className=" p-4 w-full md:w-[360px] ">
+              <h1 className="headingfootoer  md:justify-start flexCenter font-Akzidenz">
+                newsletter
+              </h1>
+              <p className="footer md:text-start text-center  flexCenter">
                 We will keep you posted with promotions, trunk shows & new
                 offers
               </p>
-              <div className="flex flex-col pt-4 justify-center ">
+              <div className="flex flex-col p-4 justify-center ">
                 <div className="text-white md:w-[280.07px] flex flex-col">
                   <input
                     type="text"
