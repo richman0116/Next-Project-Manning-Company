@@ -13,7 +13,7 @@ export default async function Home() {
   const slicedCollections = collections.slice(1);
   return (
     <Wrapper>
-      <div className=" bg-[#F9F9F9]">
+      <div className=" bg-[#F9F9F9] overflow-hidden">
         <Hero />
         <AboutUs />
         <OurProcess />
