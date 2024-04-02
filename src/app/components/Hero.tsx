@@ -11,10 +11,10 @@ const Hero = () => {
                 You Deserve a Tailor-Made Suit
               </h1>
               <p className=" text-center ">
-                <span className="font-SaolDisplayR md:leading-[46px] text-[28px] md:text-[60px]  leading-[3px] Crafted">
+                <span className="font-SaolDisplayR md:leading-[55px] text-[28px] md:text-[60px]  leading-[3px] Crafted">
                   Crafted
                 </span>
-                <span className="font-SaolDisplay md:leading-[46px] text-[28px] md:text-[60px]  leading-[3px] WithCare">
+                <span className="font-SaolDisplay md:leading-[55px] text-[28px] md:text-[60px]  leading-[3px] WithCare">
                   With Care
                 </span>
               </p>

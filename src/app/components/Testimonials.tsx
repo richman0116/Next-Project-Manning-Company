@@ -68,14 +68,14 @@ export default function Testimonials() {
                     <Image
                       src={quotes}
                       alt="quotes"
-                      className="pb-4 px-3 pt-4"
+                      className="pb-4 px-3 pt-[25px]"
                       width={67}
                       height={46}
                     />
                     <blockquote className="font-Akzidenzlc   Reviews">
                       {item.text}
                     </blockquote>
-                    <p className="Apercu px-3 pb-6  font-Apercu pt-20">
+                    <p className="Apercu px-3 pb-[28px]  font-Apercu pt-[123px]">
                       {item.name}
                     </p>
                   </div>

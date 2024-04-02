@@ -152,7 +152,15 @@
   line-height: 22.909px; /* 150% */
   text-transform: uppercase;
 }
-
+.manningfooter {
+  color: var(--White, #fff);
+  text-align: center;
+  font-size: 28.856px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30.058px; /* 104.167% */
+  text-transform: uppercase;
+}
 .Since {
   font-family: "Akzidenz-Grotesk Pro";
   font-size: 15.273px;
