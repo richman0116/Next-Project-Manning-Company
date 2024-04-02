@@ -117,7 +117,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Contact information */}
-            <div className="flex lg:flex-row  w-full flex-col md:flex-row text-white  gap-[46px]  ">
+            <div className="flex lg:flex-row  md:p-0 p-4 w-full flex-col md:flex-row text-white  gap-[46px]  ">
               <div className="flex flex-col footer font-Akzidenregular ">
                 <div className="flex items-center gap-[10px]">
                   <Image src={callIcon} alt="Call Icon" />

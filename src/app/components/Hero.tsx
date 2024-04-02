@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col  w-full h-[447px] md:h-[880px] bg-hero bg-cover  bg-center  ">
           <div className="absolute w-full h-[447px] md:h-[880px] bg-[#00000066] bg-opacity-80">
             <div className="md:px-[62px] md:pt-72 text-white pt-52  bg-opacity-40  flex flex-col md:items-start items-center  sm:px-4">
-              <h1 className="font-Akzidenregular      Deserve">
+              <h1 className="font-Akzidenregular md:leading-[15px]  leading-[7.038px]    Deserve">
                 You Deserve a Tailor-Made Suit
               </h1>
               <p className=" text-center ">
