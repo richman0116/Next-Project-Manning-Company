@@ -62,7 +62,7 @@ export default function Testimonials() {
               {testimonials.map((item, index) => (
                 <SwiperSlide
                   key={index}
-                  className="container shadow-md hover:pt-9 hover:bg-[#F5F2ED] p-4 m-4"
+                  className="container shadow-md text-[#887d6a] hover:text-black  hover:pt-9 hover:bg-[#F5F2ED] p-4 m-4"
                 >
                   <div className="flex flex-col">
                     <Image
@@ -72,10 +72,10 @@ export default function Testimonials() {
                       width={67}
                       height={46}
                     />
-                    <blockquote className="font-Akzidenzlc Reviews">
+                    <blockquote className="font-Akzidenzlc   Reviews">
                       {item.text}
                     </blockquote>
-                    <p className="Apercu px-3 pb-6 font-Apercu pt-20">
+                    <p className="Apercu px-3 pb-6  font-Apercu pt-20">
                       {item.name}
                     </p>
                   </div>
