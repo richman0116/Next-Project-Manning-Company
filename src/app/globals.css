@@ -68,10 +68,17 @@
   color: var(--White, #fff);
   font-weight: 400;
   font-style: italic;
-
-  line-height: 55px;
 }
 
+.manningmobille {
+  color: var(--Black, #000);
+  text-align: center;
+  font-size: 14.444px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.046px; /* 104.167% */
+  text-transform: uppercase;
+}
 .Decades {
   color: var(--White, #fff);
 

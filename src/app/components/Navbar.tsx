@@ -83,9 +83,9 @@ const Navbar = () => {
         </div>
         {/* Mobile menu */}
 
-        <div className="lg:hidden md:hidden fixed top-0  w-full  bg-[#F5F2ED] z-10 flex justify-between p-3">
-          <div className="   text-[#000000]  ">
-            <h1 className="    font-Akzidenzpc uppercase text-[14.44px] ">
+        <div className="lg:hidden md:hidden h-[93px] fixed top-0  w-full  bg-[#F5F2ED]  flex justify-between px-[20px]">
+          <div className="   text-[#000000] pt-[31px]  ">
+            <h1 className="    font-Akzidenzpc manningmobille ">
               Manning company
             </h1>
             <div className="flexCenter flex-col flex ">
@@ -94,8 +94,8 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex  gap-2   ">
-            <div className=" pt-1.5 ">
+          <div className="flex  gap-2    ">
+            <div className=" pt-[31px] ">
               <Image src={bagNormalb} alt="Bag" width={24} height={24} />
             </div>
             <span
