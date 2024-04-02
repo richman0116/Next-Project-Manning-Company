@@ -53,7 +53,7 @@ const Navbar = () => {
               <Image src={searchIcon} alt="Search" width={24} height={24} />
               <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
             </div>
-            <div className="flex-col  flex pt-7 ">
+            <div className="flex-col  flex pt-6 ">
               <h1 className="font-Akzidenzpc   manning">Manning company</h1>
               <div className="flexCenter flex-col">
                 <p className="font-Akzidenregular Bespoke">Bespoke tailors</p>
@@ -66,7 +66,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flexCenter pt-[44px]">
+          <div className="flexCenter pt-[30px]">
             <ul className="hidden h-full gap-[15px] lg:flex">
               {NAV_LINKS.slice(0, 6).map((link) => (
                 <li key={link.key}>
