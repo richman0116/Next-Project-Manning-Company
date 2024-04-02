@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import {
-  Akzidenz,
+  Akzidenregular,
   Akzidenzlc,
   Akzidenzpc,
   Apercu,
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${Akzidenz.variable} ${SaolDisplay.variable} 
+        className={`${Akzidenregular.variable} ${SaolDisplay.variable} 
       ${Akzidenzpc.variable} 
       ${SaolDisplayR.variable} ${Akzidenzlc.variable} ${Apercu.variable} ${SaolDisplayl.variable}`}
       >

@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 
-const Akzidenz = localFont({
+const Akzidenregular = localFont({
   src: [{ path: "../../public/font/akzidenzgroteskpro_regular.ttf" }],
-  variable: "--font-Akzidenz",
+  variable: "--font-Akzidenregular",
 });
 
 const Akzidenzlc = localFont({
@@ -33,7 +33,7 @@ const Apercu = localFont({
 });
 export {
   SaolDisplay,
-  Akzidenz,
+  Akzidenregular,
   SaolDisplayR,
   Akzidenzpc,
   Akzidenzlc,

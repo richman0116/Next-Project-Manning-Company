@@ -9,7 +9,7 @@ const Collection = ({ collections }: any) => {
     <Wrapper>
       <div className=" w-full flexCenter  pt-[123px]  flex-col">
         <div className="md:w-[500px]  flexCenter flex-col text-[#000000] up">
-          <h1 className="flexCenter flexCenter abouth  font-Akzidenz ">
+          <h1 className="flexCenter flexCenter abouth   font-Akzidenregular ">
             Shop now
           </h1>
           <p className=" font-SaolDisplay  Elevating md:leading-[40px] text-[24px] md:text-[40px]  leading-[25px] ">

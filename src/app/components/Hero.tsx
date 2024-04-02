@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="flex flex-col  w-full h-[447px] md:h-[753px] bg-hero bg-cover  bg-center  ">
           <div className="absolute w-full h-[447px] md:h-[753px] bg-[#00000066] bg-opacity-80">
             <div className="md:px-16 md:pt-72 text-white pt-52  bg-opacity-40  flex flex-col md:items-start items-center  sm:px-4">
-              <h1 className="font-Akzidenz      Deserve">
+              <h1 className="font-Akzidenregular      Deserve">
                 You Deserve a Tailor-Made Suit
               </h1>
               <p className=" text-center ">
@@ -23,7 +23,7 @@ const Hero = () => {
               </p>
               <Link
                 href="/"
-                className="relative Booknow border-b-[1px] pt-[17px]  font-Akzidenz"
+                className="relative Booknow border-b-[1px] pt-[17px]  font-Akzidenregular"
               >
                 Book now
               </Link>

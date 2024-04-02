@@ -56,8 +56,8 @@ const Navbar = () => {
             <div className="flex-col  flex pt-7 ">
               <h1 className="font-Akzidenzpc   manning">Manning company</h1>
               <div className="flexCenter flex-col">
-                <p className="font-Akzidenz Bespoke">Bespoke tailors</p>
-                <p className="font-Akzidenz  Since">Since 1979</p>
+                <p className="font-Akzidenregular Bespoke">Bespoke tailors</p>
+                <p className="font-Akzidenregular  Since">Since 1979</p>
               </div>
             </div>
             <div className=" flex flex-row gap-3  px-[60px]">
@@ -70,7 +70,10 @@ const Navbar = () => {
             <ul className="hidden h-full gap-[15px] lg:flex">
               {NAV_LINKS.slice(0, 6).map((link) => (
                 <li key={link.key}>
-                  <Link href={link.href} className="font-Akzidenz navlink">
+                  <Link
+                    href={link.href}
+                    className="font-Akzidenregular navlink"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -86,8 +89,8 @@ const Navbar = () => {
               Manning company
             </h1>
             <div className="flexCenter flex-col flex ">
-              <p className="font-Akzidenz text-[6px] ">Bespoke tailors</p>
-              <p className=" font-Akzidenz text-[6px]">Since 1979</p>
+              <p className="font-Akzidenregular text-[6px] ">Bespoke tailors</p>
+              <p className=" font-Akzidenregular text-[6px]">Since 1979</p>
             </div>
           </div>
 

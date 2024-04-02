@@ -8,7 +8,9 @@ const OurProcess = () => {
     <Wrapper>
       <div className=" w-full flexCenter  h-full pt-[100px]  flex-col">
         <div className="md:w-[500px]   flex-col text-[#000000] up">
-          <h1 className="   flexCenter abouth  font-Akzidenz  ">Our process</h1>
+          <h1 className="   flexCenter abouth  font-Akzidenregular  ">
+            Our process
+          </h1>
           <p className="   text-center ">
             <span className="font-SaolDisplay md:leading-[40px] text-[28px] md:text-[40px]  leading-[25px]  Elevating px-1">
               THE{" "}

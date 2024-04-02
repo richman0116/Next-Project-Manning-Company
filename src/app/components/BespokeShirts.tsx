@@ -7,7 +7,7 @@ const BespokeShirts = () => {
     <Wrapper>
       <div className=" bg-[#F9F9F9] pt-24  ">
         <div className=" ">
-          <h1 className="font-Akzidenz text-black freme8 leading-[15px] text-center">
+          <h1 className="  font-Akzidenregular text-black freme8 leading-[15px] text-center">
             You Deserve Unique
           </h1>
           <p className="text-[28px] text-black lg:text-[63px] md:text-[63px] leading-[25px]   md:leading-[55px] text-center">

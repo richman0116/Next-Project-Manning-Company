@@ -17,7 +17,7 @@ const config: Config = {
       fontFamily: {
         SaolDisplay: ["var(--font-SaolDisplay)"],
         SaolDisplayR: ["var(--font-SaolDisplayR)"],
-        Akzidenz: ["var(--font-Akzidenz)"],
+        Akzidenregular: ["var(--font-Akzidenregular)"],
         Akzidenzpc: ["var(--font-Akzidenzpc)"],
         Akzidenzlc: ["var(--font-Akzidenzlc)"],
         SaolDisplayl: ["var(--font-SaolDisplayl)"],
