@@ -85,9 +85,7 @@ const Navbar = () => {
 
         <div className="lg:hidden md:hidden h-[93px] fixed top-0  w-full  bg-[#F5F2ED]  flex justify-between px-[20px]">
           <div className="   text-[#000000] pt-[31px]  ">
-            <h1 className="    font-Akzidenzpc manningmobille ">
-              Manning company
-            </h1>
+            <h1 className="    font-Akzidenzpc  uppercase ">Manning company</h1>
             <div className="flexCenter flex-col flex ">
               <p className="font-Akzidenregular text-[6px] ">Bespoke tailors</p>
               <p className=" font-Akzidenregular text-[6px]">Since 1979</p>
