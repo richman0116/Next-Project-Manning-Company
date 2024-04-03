@@ -163,12 +163,6 @@ export const brands = [
     alt: "brand5",
     src: brand5,
   },
-
-  {
-    name: "Hardy Minnis",
-    alt: "brand5",
-    src: brand5,
-  },
 ];
 
 export const testimonials = [
