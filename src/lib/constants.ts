@@ -55,7 +55,6 @@ export const HELP = [
   { href: "/", key: "Shipping and Returns", label: "Shipping and Returns" },
   { href: "/", key: "FAQs", label: "FAQs" },
   { href: "/", key: "Payment Options ", label: "Payment Options" },
-  { href: "/", key: "Braces / Suspenders", label: "Braces / Suspenders" },
 ];
 export const ABOUT_US = [
   {

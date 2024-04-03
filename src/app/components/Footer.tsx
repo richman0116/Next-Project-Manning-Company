@@ -117,8 +117,8 @@ const Footer = () => {
               </div>
             </div>
             {/* Contact information */}
-            <div className="flex lg:flex-row  md:p-0 p-4 w-full flex-col md:flex-row text-white  gap-[46px]  ">
-              <div className="flex flex-col footer font-Akzidenregular ">
+            <div className="flex lg:flex-row  md:p-0 p-4 w-full flex-col md:flex-row text-white  md:gap-[46px]  ">
+              <div className="flex flex-col  footer font-Akzidenregular ">
                 <div className="flex items-center gap-[10px]">
                   <Image src={callIcon} alt="Call Icon" />
                   <p className=" footer font-Akzidenregular">+852 2111 1955</p>
@@ -129,7 +129,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex   gap-[10px]  ">
-                <div className=" pt-3">
+                <div className="  pt-3">
                   <Image src={locationIcon} alt="Location Icon" />
                 </div>
                 <p className=" footer font-Akzidenregular">
@@ -143,7 +143,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full Copyright p-4 text-center">
+        <div className="w-full Copyright pb-6 pt-11 text-center">
           © 2024 Copyright by Manning Company{" "}
         </div>
       </div>
