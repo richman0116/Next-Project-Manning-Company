@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           <div className="flexCenter pt-[30px]">
-            <ul className="hidden h-full gap-[15px] lg:flex">
+            <ul className="hidden   gap-[15px] md:flex lg:flex">
               {NAV_LINKS.slice(0, 6).map((link) => (
                 <li key={link.key}>
                   <Link
