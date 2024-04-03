@@ -129,7 +129,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex   gap-[10px]  ">
-                <div className="  pt-3">
+                <div className=" md:pt-2 pt-3">
                   <Image src={locationIcon} alt="Location Icon" />
                 </div>
                 <p className=" footer font-Akzidenregular">
