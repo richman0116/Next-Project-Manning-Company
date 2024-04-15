@@ -21,7 +21,7 @@ export default function Page() {
     try {
       const response = await axios.post("/api/user/login", user);
       toast.success("Login successful");
-      router.push("/profile");
+      router.push("/bespoke-Shirts");
     } catch (error: any) {
       if (error.response && error.response.status === 400) {
         setErrorMessage("Invalid email or password");
