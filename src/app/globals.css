@@ -207,3 +207,24 @@
 
   background: #0f0f0f;
 }
+.slectnummob {
+  display: flex;
+  width: 26.285px;
+  padding: 5.914px 9.085px 6.371px 9.2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 65.713px;
+  background: var(--Black, #000);
+}
+.selectnub {
+  display: flex;
+  width: 40px;
+  padding: 9px 14px 10px 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+.selectname {
+  font-style: normal;
+  font-weight: 400;
+}
