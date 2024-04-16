@@ -53,13 +53,15 @@ const Navbar = () => {
               <Image src={searchIcon} alt="Search" width={24} height={24} />
               <Image src={whatsappIcon} alt="WhatsApp" width={24} height={24} />
             </div>
-            <div className="flex-col  flex pt-6 ">
-              <h1 className="font-Akzidenzpc   manning">Manning company</h1>
-              <div className="flexCenter flex-col">
-                <p className="font-Akzidenregular Bespoke">Bespoke tailors</p>
-                <p className="font-Akzidenregular  Since">Since 1979</p>
+            <Link href={"/"}>
+              <div className="flex-col  flex pt-6 ">
+                <h1 className="font-Akzidenzpc   manning">Manning company</h1>
+                <div className="flexCenter flex-col">
+                  <p className="font-Akzidenregular Bespoke">Bespoke tailors</p>
+                  <p className="font-Akzidenregular  Since">Since 1979</p>
+                </div>
               </div>
-            </div>
+            </Link>
             <div className=" flex flex-row gap-3  px-[60px]">
               <Image src={profileIcon} alt="Profile" width={24} height={24} />
               <Image src={bagIcon} alt="Bag" width={24} height={24} />
@@ -84,13 +86,19 @@ const Navbar = () => {
         {/* Mobile menu */}
 
         <div className="lg:hidden md:hidden h-[93px] fixed top-0  w-full  bg-[#F5F2ED]  flex justify-between px-[20px]">
-          <div className="   text-[#000000] pt-[31px]  ">
-            <h1 className="    font-Akzidenzpc  uppercase ">Manning company</h1>
-            <div className="flexCenter flex-col flex ">
-              <p className="font-Akzidenregular text-[6px] ">Bespoke tailors</p>
-              <p className=" font-Akzidenregular text-[6px]">Since 1979</p>
+          <Link href={"/"}>
+            <div className="   text-[#000000] pt-[31px]  ">
+              <h1 className="    font-Akzidenzpc  uppercase ">
+                Manning company
+              </h1>
+              <div className="flexCenter flex-col flex ">
+                <p className="font-Akzidenregular text-[6px] ">
+                  Bespoke tailors
+                </p>
+                <p className=" font-Akzidenregular text-[6px]">Since 1979</p>
+              </div>
             </div>
-          </div>
+          </Link>
 
           <div className="flex  gap-2    ">
             <div className=" pt-[31px] ">
@@ -109,13 +117,15 @@ const Navbar = () => {
         {showMenu && (
           <div className="lg:hidden fixed top-0 left-0 w-full h-full bg-[#F5F2ED] z-10">
             <div className="flex flex-row justify-between p-4">
-              <div className="text-[#000000]">
-                <h1 className="font-Akzidenzpc uppercase">Manning company</h1>
-                <div className="flexCenter flex-col">
-                  <p>Bespoke tailors</p>
-                  <p>Since 1979</p>
+              <Link href={"/"}>
+                <div className="text-[#000000]">
+                  <h1 className="font-Akzidenzpc uppercase">Manning company</h1>
+                  <div className="flexCenter flex-col">
+                    <p>Bespoke tailors</p>
+                    <p>Since 1979</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
               <div>
                 <span
                   onClick={toggleMenu}

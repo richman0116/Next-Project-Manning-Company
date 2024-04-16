@@ -10,15 +10,17 @@ const Footer = () => {
   return (
     <Wrapper>
       <div className=" bg-[#000000]      ">
-        <div className="flex-col pt-12  flex   ">
-          <h1 className="font-Akzidenzpc   manningfooter">Manning company</h1>
-          <div className="flexCenter flex-col">
-            <p className=" font-Akzidenregular Bespoke text-white">
-              Bespoke tailors
-            </p>
-            <p className="font-Akzidenregular Since text-white">Since 1979</p>
+        <Link href={"/"}>
+          <div className="flex-col pt-12  flex   ">
+            <h1 className="font-Akzidenzpc   manningfooter">Manning company</h1>
+            <div className="flexCenter flex-col">
+              <p className=" font-Akzidenregular Bespoke text-white">
+                Bespoke tailors
+              </p>
+              <p className="font-Akzidenregular Since text-white">Since 1979</p>
+            </div>
           </div>
-        </div>
+        </Link>
         <div className=" w-full  pt-10 justify-center  flex md:flex-row lg:flex-row gap-[80px]   flex-col-reverse  ">
           <div className=" grid md:grid-cols-4 lg:grid-cols-4 grid-cols-2  gap-[40px] p-4 ">
             <div className=" ">
