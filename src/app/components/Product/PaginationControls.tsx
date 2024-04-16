@@ -1,7 +1,17 @@
 import Link from "next/link";
 import { IoChevronBackSharp, IoChevronForward } from "react-icons/io5";
 
-const PaginationControls = ({ pageNumber, totalPages, nextPage }: any) => {
+interface PaginationControlsProps {
+  pageNumber: number;
+  totalPages: number;
+  nextPage: number;
+}
+
+const PaginationControls = ({
+  pageNumber,
+  totalPages,
+  nextPage,
+}: PaginationControlsProps) => {
   const pageNumbers = Array.from({ length: totalPages }, (_, i) => i + 1);
 
   return (

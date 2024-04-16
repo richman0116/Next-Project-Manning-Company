@@ -61,11 +61,11 @@ const BespokeShirts = () => {
           <BotomLinks text={"Book an Appointment"} />
         </div>
 
-        <div className="flexCenter md:pt-[80px] pt-[72px]    md:w-full gap-[26px]  md:gap-[40px]">
+        <div className="flexCenter md:pt-[80px] pt-[72px]  hidden   md:w-full gap-[26px]  md:gap-[40px]">
           {stepsData.map((step, index) => (
             <div
               key={index}
-              className=" flex md:hover:text-black  md:text-[#CCC] gap-[5.6px]  md:gap-[8px]"
+              className="  md:hover:text-black hidden  md:text-[#CCC] gap-[5.6px]  md:gap-[8px]"
             >
               <div className=" hidden  md:block">
                 <p className=" selectnub     bg-[#CCC]    hover:bg-black text-white">
@@ -80,9 +80,6 @@ const BespokeShirts = () => {
               </p>
             </div>
           ))}
-        </div>
-        <div className="   ">
-          <Dropdown />
         </div>
       </div>
     </Wrapper>

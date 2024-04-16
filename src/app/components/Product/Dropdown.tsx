@@ -1,18 +1,77 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Wrapper from "@/app/Shared/Wrapper";
-import React from "react";
+import { fetchProducts } from "@/lib/product";
+import ProductCard from "./ProductCard";
 
-const Dropdown = () => {
-  const colorOptions = ["COLOR", "Red", "Blue", "Green"];
-  const designOptions = ["DESIGN", "Stripes", "Checkered", "Plain"];
-  const weightOptions = ["FABRIC WEIGHT SHIRTS", "Light", "Medium", "Heavy"];
-  const fabricOptions = ["FABRIC TYPE", "Cotton", "Polyester", "Silk"];
-  const priceOptions = ["PRICE", "Low", "Medium", "High"];
+const designOptions = ["DESIGN", "Stripes", "Checkered", "Plain"];
+const weightOptions = ["FABRIC WEIGHT SHIRTS", "Light", "Medium", "Heavy"];
+const fabricOptions = ["FABRIC TYPE", "Cotton", "Polyester", "Silk"];
+const priceOptions = ["PRICE", "Low", "Medium", "High"];
+
+interface Product {
+  id: string;
+  title: string;
+  featuredImage: {
+    url: string;
+    altText: string;
+  };
+  priceRange: {
+    minVariantPrice: {
+      amount: string;
+    };
+  };
+}
+
+const Dropdown = ({ searchParams }: any) => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const [colorOptions, setColorOptions] = useState<string[]>([]);
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        const allProducts = await fetchProducts();
+        setProducts(allProducts);
+        const colorOptions = allProducts.map((product) => product.tags).flat();
+
+        setColorOptions(colorOptions);
+        console.log("colorOptions", colorOptions);
+      } catch (error) {
+        console.error("Failed to fetch products:", error);
+      }
+    };
+
+    loadProducts();
+  }, []);
+
+  const handleSearch = async () => {
+    if (!searchTerm) return;
+    try {
+      const filteredProducts = await fetchProducts();
+      const filtered = filteredProducts.filter((product) =>
+        product.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setProducts(filtered);
+    } catch (error) {
+      console.error("Failed to fetch products:", error);
+    }
+  };
+
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      handleSearch();
+    }
+  };
   return (
     <Wrapper>
       <div className="flex flex-wrap flexCenter pt-[68px] gap-[41px] w-full">
         <div className=" hidden md:block">
           <select id="color" className="p-2 bg-[#F9F9F9]">
-            {colorOptions.map((option, index) => (
+            <option className="filtersection font-Akzidenz" value="">
+              COLOR
+            </option>
+            {Array.from(new Set(colorOptions)).map((option, index) => (
               <option
                 className="filtersection font-Akzidenz"
                 key={index}
@@ -103,9 +162,36 @@ const Dropdown = () => {
           <div className="bg-[#F9F9F9]  ">
             <input
               type="text"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyPress={handleKeyPress}
               placeholder="Search"
               className="bg-[#F9F9F9] focus:outline-none"
             />
+          </div>
+        </div>
+        <div className="">
+          <div className="   md:px-0 flex justify-between ">
+            <div className=" flex    gap-6  pt-4">
+              <p className="namep  font-Akzidenz ">Show</p>
+              <p className="  underline border-black number font-Akzidenz ">
+                25
+              </p>
+              <p className="number  font-Akzidenz ">50</p>
+              <p className="number  font-Akzidenz ">100</p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-4 mt-[35px]">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                id={product.id}
+                imageUrl={product.featuredImage.url}
+                imageAlt={product.featuredImage.altText}
+                title={product.title}
+                price={product.priceRange.minVariantPrice.amount}
+              />
+            ))}
           </div>
         </div>
       </div>
