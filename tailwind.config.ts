@@ -13,6 +13,9 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: "url('/assets/Hero.jpeg')", // Adjust the path based on your project structure
+        dateimage: "url('/assets/date.png')",
+        locationimage: "url('/assets/location.png')",
+        descriptionimage: "url('/assets/description.png')",
       },
       fontFamily: {
         SaolDisplay: ["var(--font-SaolDisplay)"],
