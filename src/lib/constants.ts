@@ -29,7 +29,7 @@ export const NAV_LINKS = [
   { href: "/", key: "Shop now", label: "Shop now" },
   { href: "/trunk-Show", key: "Trunk Show ", label: "Trunk Show " },
   { href: "/", key: "Gift Voucher ", label: "Gift Voucher" },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  { href: "/contact", key: "contact_us", label: "Contact Us" },
   { href: "/", key: "Sign In", label: "Sign In" },
 ];
 
