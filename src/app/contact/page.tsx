@@ -12,8 +12,8 @@ const Page = () => {
             Contact Us
           </h1>
         </div>
-        <div className="flex flex-col xl:flex-row pt-[120px] pb-[150px] w-full gap-[60px] xl:gap-[160px] px-[30px] md:px-[100px] xl:px-[160px] justify-between">
-          <div className="flex flex-col w-auto xl:w-1/2 gap-5">
+        <div className="flex flex-col-reverse xl:flex-row pt-[120px] pb-[150px] w-full gap-[100px] xl:gap-[160px] sm:px-[0px] md:px-[100px] xl:px-[160px] justify-between">
+          <div className="flex flex-col w-auto xl:w-1/2 gap-16">
             <ContactForm />
             <GoogleMap />
           </div>

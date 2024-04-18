@@ -1,6 +1,6 @@
 const Form = () => {
   return (
-    <div className="flex flex-col relative gap-6 bg-white shadow-md p-3 md:p-8 xl:p-16 pt-20 w-auto xl:w-1/2 justify-center items-center">
+    <div className="flex flex-col relative gap-6 bg-white shadow-md mx-[35px] sm:mx-[35px] p-3 md:p-8 xl:p-16 pt-20 w-auto xl:w-1/2 justify-center items-center">
       <input
         placeholder="Name*"
         className="placeholder-[#828282] font-[16px] focus:bg-white rounded-[10px] w-full h-12 xl:h-16 bg-gray-100 p-4"
