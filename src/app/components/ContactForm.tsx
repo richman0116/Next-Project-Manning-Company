@@ -1,6 +1,6 @@
 const ContactForm = () => {
   return (
-    <div className="flex flex-col gap-[56px] items-center xl:items-start">
+    <div className="flex flex-col gap-[56px] items-start px-[30px] sm:px-[30px]">
       <div className="flex flex-col gap-7">
         <p className="text-[30px] xl:text-[36px] before:whitespace-nowrap font-Akzidenregular">Let&apos;s talk with us</p>
         <p className="text-[14px] xl:text-[16px] font-Akzidenregular">
@@ -9,12 +9,10 @@ const ContactForm = () => {
         </p>
       </div>
       <div className="flex flex-col gap-7">
-        <div className="flex flex-row gap-3">
-          <div className="flex bg-call w-5 h-5 bg-cover bg-no-repeat bg-center"></div>
-          <div className="flex flex-col md:flex-row gap-1">
-            <p className="text-[14px] xl:text-[16px] font-Akzidenregular whitespace-nowrap">+852 2111 1955 /</p>
-            <p className="text-[14px] xl:text-[16px] font-Akzidenregular whitespace-nowrap">+852 3427 9296 /</p>
-            <p className="text-[14px] xl:text-[16px] font-Akzidenregular whitespace-nowrap">+852 2375 3897</p>
+        <div className="flex flex-row gap-2">
+          <div className="flex bg-call w-6 h-6 bg-cover bg-no-repeat bg-center min-w-[24px]"></div>
+          <div className="flex flex-row gap-1">
+            <p className="text-[14px] xl:text-[16px] font-Akzidenregular">+852 2111 1955 / +852 3427 9296 / +852 2375 3897</p>
           </div>
         </div>
         <div className="flex flex-row gap-2">
