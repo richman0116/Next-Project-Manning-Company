@@ -19,8 +19,8 @@ const ProductCard = ({
     <div key={id} className="px-[58px] md:px-0">
       <Image src={imageUrl} alt={imageAlt} width={312} height={100} />
       <div className="flex gap-[52px] p-2 pt-[18px]">
-        <h2 className="namep font-Akzidenz">{title}</h2>
-        <p className="pt-[18px] pricep font-Akzidenzpc">${price}</p>
+        <h2 className="namep  font-Akzidenregular">{title}</h2>
+        <p className="pt-[18px] price  font-Akzidenzpc  ">${price}</p>
       </div>
     </div>
   );

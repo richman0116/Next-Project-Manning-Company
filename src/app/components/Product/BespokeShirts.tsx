@@ -1,35 +1,16 @@
 import React from "react";
 import Wrapper from "../../Shared/Wrapper";
 import BotomLinks from "@/app/Shared/BotomLinks";
-import Dropdown from "./Dropdown";
 
 const BespokeShirts = () => {
-  const stepsData = [
-    {
-      number: 1,
-      title: "SELECT FABRIC",
-    },
-    {
-      number: 2,
-      title: "DESIGN",
-    },
-    {
-      number: 3,
-      title: "EXTRAS",
-    },
-    {
-      number: 4,
-      title: "SIZING",
-    },
-  ];
   return (
     <Wrapper>
-      <div className=" bg-[#F9F9F9] md:pt-[270px] pt-[150px]  ">
+      <div className=" bg-[#F9F9F9] md:pt-[270px] pt-[220px]  ">
         <div className="pt-[60]  ">
-          <h1 className="font-Akzidenz pb-1 flexCenter   md:leading-[15px]  leading-[7.038px]  BDeserve">
+          <h1 className="font-Akzidenz md:pb-0 pb-1.5 flexCenter   md:leading-[15px]  leading-[7.038px]  BDeserve">
             You Deserve Unique
           </h1>
-          <p className=" text-center">
+          <p className=" text-center pb-2">
             <span className="font-SaolDisplayR md:leading-[55px] text-[28px] md:text-[60px]  leading-[25px] bCrafted">
               Bespoke{" "}
             </span>
@@ -59,27 +40,6 @@ const BespokeShirts = () => {
         </div>
         <div className=" flexCenter md:pt-0 pt-[20px]">
           <BotomLinks text={"Book an Appointment"} />
-        </div>
-
-        <div className="flexCenter md:pt-[80px] pt-[72px]  hidden   md:w-full gap-[26px]  md:gap-[40px]">
-          {stepsData.map((step, index) => (
-            <div
-              key={index}
-              className="  md:hover:text-black hidden  md:text-[#CCC] gap-[5.6px]  md:gap-[8px]"
-            >
-              <div className=" hidden  md:block">
-                <p className=" selectnub     bg-[#CCC]    hover:bg-black text-white">
-                  {step.number}
-                </p>
-              </div>
-              <div className="   md:hidden">
-                <p className=" slectnummob   text-white    ">{step.number}</p>
-              </div>
-              <p className=" selectname  leading-[14px] md:leading-[21px] font-Akzidenz md:text-[20px]  text-[13px]  pt-2.5">
-                {step.title}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </Wrapper>

@@ -41,6 +41,10 @@ const Navbar = () => {
   const profileIcon = scrollY || !isHomepage ? profileNormal : profileWhite;
   const bagIcon = scrollY || !isHomepage ? bagNormal : bagWhite;
 
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
   return (
     <Wrapper>
       <nav
@@ -75,6 +79,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     className="font-Akzidenregular navlink"
+                    onClick={closeMenu}
                   >
                     {link.label}
                   </Link>
@@ -141,6 +146,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.key}
+                    onClick={closeMenu}
                     className="block text-lg font-normal text-[#000000] mb-4"
                   >
                     {link.label}

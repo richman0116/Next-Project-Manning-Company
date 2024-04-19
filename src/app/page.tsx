@@ -6,7 +6,7 @@ import ShopNowCol from "@/app/components/ShopNowCol";
 import Testimonials from "@/app/components/Testimonials";
 import { getCollections } from "@/lib/shopify";
 import Wrapper from "./Shared/Wrapper";
-import AboutUs from "@/app/components/Product/AboutUs";
+import AboutUs from "@/app/components/AboutUs";
 
 export default async function Home() {
   const collections = await getCollections();
