@@ -27,9 +27,9 @@ export const NAV_LINKS = [
   { href: "/bespoke-Shirts", key: "Bespoke Shirts", label: "Bespoke Shirts" },
   { href: "/", key: "Bespoke Suits", label: "Bespoke Suits" },
   { href: "/", key: "Shop now", label: "Shop now" },
-  { href: "/", key: "Trunk Show ", label: "Trunk Show " },
+  { href: "/trunk-Show", key: "Trunk Show ", label: "Trunk Show " },
   { href: "/", key: "Gift Voucher ", label: "Gift Voucher" },
-  { href: "/", key: "contact_us", label: "Contact Us" },
+  { href: "/contact", key: "contact_us", label: "Contact Us" },
   { href: "/", key: "Sign In", label: "Sign In" },
 ];
 
@@ -189,5 +189,81 @@ export const testimonials = [
   {
     text: "Our Bespoke suits are exclusively tailored for discerning individuals, meticulously crafted from scratch.",
     name: "Freda Collier",
-  },
+  }
 ];
+
+export const COUNTRY_NAMES = [
+  { name: "Australia", key: "Australia" },
+  { name: "Canada", key: "Canada" },
+  { name: "China", key: "China" },
+  { name: "Germany", key: "Germany" },
+  { name: "Netherlands", key: "Netherlands" },
+  { name: "Norway", key: "Norway" },
+  { name: "Switzerland", key: "Switzerland" },
+  { name: "United Kingdom", key: "United Kingdom" },
+  { name: "United States", key: "United States" },
+  { name: "Hong Kong", key: "Hong Kong" }
+];
+
+export const BOOK_CARDS = [
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  },
+  {
+    date: "21st & 22nd April, 2024",
+    location: "Teaneck, NJ",
+    description: "Homewood Suites by Hilton Teaneck Glenpointe One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  }
+]

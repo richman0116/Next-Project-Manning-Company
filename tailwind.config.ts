@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         hero: "url('/assets/Hero.jpeg')", // Adjust the path based on your project structure
+        dateimage: "url('/assets/date.png')",
+        locationimage: "url('/assets/location.png')",
+        descriptionimage: "url('/assets/description.png')",
+        call: "url('/assets/call.png')",
+        mail: "url('/assets/mail.png')",
+        call_mail: "url('/assets/call_mail.png')",
+        position: "url('/assets/position.png')",
+        greencall: "url('/assets/greencall.png')"
       },
       fontFamily: {
         SaolDisplay: ["var(--font-SaolDisplay)"],
