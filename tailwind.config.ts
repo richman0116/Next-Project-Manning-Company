@@ -20,7 +20,12 @@ const config: Config = {
         mail: "url('/assets/mail.png')",
         call_mail: "url('/assets/call_mail.png')",
         position: "url('/assets/position.png')",
-        greencall: "url('/assets/greencall.png')"
+        greencall: "url('/assets/greencall.png')",
+        back1: "url('/assets/bg-1.png')",
+        person1: "url('/assets/p-1.png')",
+        person2: "url('/assets/p-2.png')",
+        person3: "url('/assets/p-3.png')",
+        person4: "url('/assets/p-4.png')",
       },
       fontFamily: {
         SaolDisplay: ["var(--font-SaolDisplay)"],

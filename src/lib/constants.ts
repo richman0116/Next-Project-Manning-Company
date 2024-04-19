@@ -28,7 +28,7 @@ export const NAV_LINKS = [
   { href: "/", key: "Bespoke Suits", label: "Bespoke Suits" },
   { href: "/", key: "Shop now", label: "Shop now" },
   { href: "/trunk-Show", key: "Trunk Show ", label: "Trunk Show " },
-  { href: "/", key: "Gift Voucher ", label: "Gift Voucher" },
+  { href: "/gift-Voucher", key: "Gift Voucher ", label: "Gift Voucher" },
   { href: "/contact", key: "contact_us", label: "Contact Us" },
   { href: "/", key: "Sign In", label: "Sign In" },
 ];
@@ -291,3 +291,10 @@ export const BOOK_CARDS = [
     address: "One Glenwood Ave Suite A, Teaneck, NJ 07666"
   }
 ]
+
+export const RELATED_PRODUCTS = [
+  { imageurl: "/assets/p-1.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+  { imageurl: "/assets/p-2.png", clothesname: "Yellow Reserved Hoodie", isdiscount:"Discount", upperprice: "$364.00", price: "$155.00", issale: 1 },
+  { imageurl: "/assets/p-3.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+  { imageurl: "/assets/p-4.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+];
