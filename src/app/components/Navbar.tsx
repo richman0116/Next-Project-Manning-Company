@@ -78,8 +78,7 @@ const Navbar = () => {
                 <li key={link.key}>
                   <Link
                     href={link.href}
-                    className="font-Akzidenregular navlink"
-                    onClick={closeMenu}
+                    className={`font-Akzidenregular navlink ${pathname === link.href ? "underline" : ""}`}
                   >
                     {link.label}
                   </Link>
