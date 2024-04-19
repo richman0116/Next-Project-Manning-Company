@@ -33,13 +33,13 @@ const SelectCountryDropdown = () => {
           showDropdown ?
             <div className='pr-6'>
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12" fill="none">
-                <path d="M17.9706 10.4854L9.48535 2.00014L1.00007 10.4854" stroke="#333333" stroke-width="2"/>
+                <path d="M17.9706 10.4854L9.48535 2.00014L1.00007 10.4854" stroke="#333333" strokeWidth="2"/>
               </svg>
             </div>
             :
             <div className='pr-6'>
               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="12" viewBox="0 0 19 12" fill="none">
-                <path d="M1.00007 1.48528L9.48535 9.97056L17.9706 1.48528" stroke="#333333" stroke-width="2"/>
+                <path d="M1.00007 1.48528L9.48535 9.97056L17.9706 1.48528" stroke="#333333" strokeWidth="2"/>
               </svg>
             </div>
         }
