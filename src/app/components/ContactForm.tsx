@@ -1,11 +1,11 @@
 const ContactForm = () => {
   return (
-    <div className="flex flex-col gap-[56px] items-start px-[30px] sm:px-[30px]">
+    <div className="flex flex-col gap-[56px] items-start px-[30px] md:px-[0px]">
       <div className="flex flex-col gap-7">
         <p className="text-[30px] xl:text-[36px] before:whitespace-nowrap font-Akzidenregular">Let&apos;s talk with us</p>
         <p className="text-[14px] xl:text-[16px] font-Akzidenregular">
           Opening Hours<br></br>Monday - Saturday: 10:00 am - 08:00 pm<br></br>
-          Sunday and Public Holidays:By Appointment
+          Sunday and Public Holidays: By Appointment
         </p>
       </div>
       <div className="flex flex-col gap-7">

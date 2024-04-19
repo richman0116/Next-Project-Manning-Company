@@ -78,8 +78,12 @@ const Navbar = () => {
                 <li key={link.key}>
                   <Link
                     href={link.href}
+<<<<<<< HEAD
                     className="font-Akzidenregular navlink"
                     onClick={closeMenu}
+=======
+                    className={`font-Akzidenregular navlink ${pathname === link.href ? "underline" : ""}`}
+>>>>>>> 6a8caa2 (fix contact and trunk show page)
                   >
                     {link.label}
                   </Link>

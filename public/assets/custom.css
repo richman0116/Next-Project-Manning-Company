@@ -1,0 +1,16 @@
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4; /* Color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #DDD; /* Color of the scrollbar handle */
+  border-radius: 0 10px 5px 5px; /* Radius of the scrollbar handle */
+  cursor: pointer;
+}
