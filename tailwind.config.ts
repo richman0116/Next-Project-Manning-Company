@@ -16,7 +16,7 @@ const config: Config = {
         dateimage: "url('/assets/date.png')",
         locationimage: "url('/assets/location.png')",
         descriptionimage: "url('/assets/description.png')",
-        call: "url('/assets/call.png')",
+        call: "url('/assets/Call.png')",
         mail: "url('/assets/mail.png')",
         call_mail: "url('/assets/call_mail.png')",
         position: "url('/assets/position.png')",
