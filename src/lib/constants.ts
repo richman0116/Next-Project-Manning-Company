@@ -28,7 +28,7 @@ export const NAV_LINKS = [
   { href: "/", key: "Bespoke Suits", label: "Bespoke Suits" },
   { href: "/", key: "Shop now", label: "Shop now" },
   { href: "/trunk-Show", key: "Trunk Show ", label: "Trunk Show " },
-  { href: "/", key: "Gift Voucher ", label: "Gift Voucher" },
+  { href: "/gift-Voucher", key: "Gift Voucher ", label: "Gift Voucher" },
   { href: "/contact", key: "contact_us", label: "Contact Us" },
   { href: "/", key: "Sign In", label: "Sign In" },
 ];
@@ -289,5 +289,77 @@ export const BOOK_CARDS = [
     location: "Teaneck, NJ",
     appointmentLocation: "Homewood Suites by Hilton Teaneck Glenpointe",
     address: "One Glenwood Ave Suite A, Teaneck, NJ 07666"
+  }
+]
+
+export const RELATED_PRODUCTS = [
+  { imageurl: "/assets/p-1.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+  { imageurl: "/assets/p-2.png", clothesname: "Yellow Reserved Hoodie", isdiscount:"Discount", upperprice: "$364.00", price: "$155.00", issale: 1 },
+  { imageurl: "/assets/p-3.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+  { imageurl: "/assets/p-4.png", clothesname: "Red / white Striped Shirt", isdiscount:"", upperprice: "", price: "$63.85", issale: 0 },
+];
+
+export const PRODUCT_PHOTOS = [
+  { imageUrl: "/assets/productitem1.jpeg", imageAlt: "productitem1"},
+  { imageUrl: "/assets/productitem2.jpeg", imageAlt: "productitem2"},
+  { imageUrl: "/assets/productitem3.jpeg", imageAlt: "productitem3"},
+]
+
+export const TYPE_CARDS = [
+  { 
+    title: "Fitting",
+    images: [
+      {imageUrl: "/assets/regular.png", imageAlt: "Regular"}, 
+      {imageUrl: "/assets/fit.png", imageAlt: "Fit"}
+    ]
+  },
+  { 
+    title: "Collar",
+    images: [
+      {imageUrl: "/assets/mediumpoint.png",imageAlt: "Medium Point"},   
+      {imageUrl: "/assets/spread.png", imageAlt: "Spread"},   
+      {imageUrl: "/assets/cutaway.png", imageAlt: "Cutaway"},   
+      {imageUrl: "/assets/buttondown.png", imageAlt: "Button Down"},   
+      {imageUrl: "/assets/mandarin.png", imageAlt: "Mandarin"}
+    ]
+  },
+  { 
+    title: "Collar Interlining",
+    images: [
+      {imageUrl: "/assets/soft.png", imageAlt: "Soft"},
+      {imageUrl: "/assets/standard.png", imageAlt: "Standard"},
+      {imageUrl: "/assets/hard.png", imageAlt: "Hard"}
+    ]
+  },
+  { 
+    title: "Front Placket", 
+    images: [
+      {imageUrl: "/assets/noplacket.png", imageAlt: "No Placket"},
+      {imageUrl: "/assets/frontplacket.png", imageAlt: "Front placket"},
+      {imageUrl: "/assets/hiddenbuttons.png", imageAlt: "Hidden Buttons"} 
+    ]
+  },
+  { title: "Cuffs",
+    images: [
+      {imageUrl: "/assets/twobuttonbarrel.png", imageAlt: "Two Button Barrel"},
+      {imageUrl: "/assets/twobuttonangled.png", imageAlt: "Two Button Angled"},
+      {imageUrl: "/assets/onebuttonangled.png", imageAlt: "One Button Angled"},
+      {imageUrl: "/assets/frenchcuffsbarrel.png", imageAlt: "French Cuffs Barrel"},
+      {imageUrl: "/assets/frenchcuffsangled.png", imageAlt: "French Cuffs Angled"}
+    ]
+  },
+  { 
+    title: "Back Pleat",
+    images: [
+      {imageUrl: "/assets/plainback.png", imageAlt: "Plain back"},
+      {imageUrl: "/assets/boxpleat.png", imageAlt: "Box Pleat"},
+      {imageUrl: "/assets/sidepleat.png", imageAlt: "Side Pleat"} 
+    ] 
+  },
+  { title: "Pocket",
+    images: [
+      {imageUrl: "/assets/nopocket.png", imageAlt: "No Pocket"},
+      {imageUrl: "/assets/frontpocket.png", imageAlt: "Front Pocket"} 
+    ]
   }
 ]
