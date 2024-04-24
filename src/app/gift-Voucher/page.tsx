@@ -3,6 +3,7 @@ import GiftVoucher from "../components/GiftVoucher";
 import RelatedProducts from "../components/RelatedProducts";
 import { RELATED_PRODUCTS } from "@/lib/constants";
 import GiftCard from "../components/GiftCard";
+import Link from "next/link";
 
 const Page = () => {
   return (
